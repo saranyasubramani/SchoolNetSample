@@ -1,0 +1,2676 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SeleniumWebHelper</name>
+    </assembly>
+    <members>
+        <member name="T:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture">
+            <summary>
+            Wrapper around the assert class, that captures a screenshot and html on failure
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.Object,System.Object)">
+            <summary>
+                 Verifies that two specified objects are equal. The assertion fails if the
+                 objects are not equal.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first object to compare. This is the object the unit test expects.
+            </param>
+            <param name="actual">
+                 The second object to compare. This is the object the unit test produced.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is not equal to actual</exception>
+                 
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual``1(OpenQA.Selenium.IWebDriver,``0,``0)">
+            
+            <summary>
+                 Verifies that two specified generic type data are equal. The assertion fails
+                 if they are not equal.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first generic type data to compare. This is the generic type data the
+                 unit test expects.
+            </param>
+            <param name="actual">
+                 The second generic type data to compare. This is the generic type data the
+                 unit test produced.
+            </param>
+             Type parameters:
+            <param name="T">
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is not equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.Double,System.Double,System.Double)">
+            
+            <summary>
+                 Verifies that two specified doubles are equal, or within the specified accuracy
+                 of each other. The assertion fails if they are not within the specified accuracy
+                 of each other.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first double to compare. This is the double the unit test expects.
+            </param>
+            <param name="actual">
+                 The second double to compare. This is the double the unit test produced.
+            </param>
+            <param name="delta">
+                 The required accuracy. The assertion will fail only if expected is different
+                 from actual by more than delta.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is different from actual by more than delta</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.Single,System.Single,System.Single)">
+            
+            <summary>
+                 Verifies that two specified singles are equal, or within the specified accuracy
+                 of each other. The assertion fails if they are not within the specified accuracy
+                 of each other.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first single to compare. This is the single the unit test expects.
+            </param>
+            <param name="actual">
+                 The second single to compare. This is the single the unit test produced.
+            </param>
+            <param name="delta">
+                 The required accuracy. The assertion will fail only if expected is different
+                 from actual by more than delta.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is not equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.Object,System.Object,System.String)">
+            
+            <summary>
+                 Verifies that two specified objects are equal. The assertion fails if the
+                 objects are not equal. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first object to compare. This is the object the unit test expects.
+            </param>
+            <param name="actual">
+                 The second object to compare. This is the object the unit test produced.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is not equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Boolean)">
+            
+            <summary>
+                 Verifies that two specified strings are equal, ignoring case or not as specified.
+                 The assertion fails if they are not equal.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first string to compare. This is the string the unit test expects.
+            </param>
+            <param name="actual">
+                 The second string to compare. This is the string the unit test produced.
+            </param>
+            <param name="ignoreCase">
+                 A Boolean value that indicates a case-sensitive or insensitive comparison.
+                 true indicates a case-insensitive comparison.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is not equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual``1(OpenQA.Selenium.IWebDriver,``0,``0,System.String)">
+            
+            <summary>
+                 Verifies that two specified generic type data are equal. The assertion fails
+                 if they are not equal. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first generic type data to compare. This is the generic type data the
+                 unit test expects.
+            </param>
+            <param name="actual">
+                 The second generic type data to compare. This is the generic type data the
+                 unit test produced.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+             Type parameters:
+            <param name="T">
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is not equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.Double,System.Double,System.Double,System.String)">
+            
+            <summary>
+                 Verifies that two specified doubles are equal, or within the specified accuracy
+                 of each other. The assertion fails if they are not within the specified accuracy
+                 of each other. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first double to compare. This is the double the unit test expects.
+            </param>
+            <param name="actual">
+                 The second double to compare. This is the double the unit test produced.
+            </param>
+            <param name="delta">
+                 The required accuracy. The assertion will fail only if expected is different
+                 from actual by more than delta.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is different from actual by more than delta</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.Single,System.Single,System.Single,System.String)">
+            
+            <summary>
+                 Verifies that two specified singles are equal, or within the specified accuracy
+                 of each other. The assertion fails if they are not within the specified accuracy
+                 of each other. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first single to compare. This is the single the unit test expects.
+            </param>
+            <param name="actual">
+                 The second single to compare. This is the single the unit test produced.
+            </param>
+            <param name="delta">
+                 The required accuracy. The assertion will fail only if expected is different
+                 from actual by more than delta.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is not equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.Object,System.Object,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that two specified objects are equal. The assertion fails if the
+                 objects are not equal. Displays a message if the assertion fails, and applies
+                 the specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first object to compare. This is the object the unit test expects.
+            </param>
+            <param name="actual">
+                 The second object to compare. This is the object the unit test produced.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is not equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Boolean,System.Globalization.CultureInfo)">
+            
+            <summary>
+                 Verifies that two specified strings are equal, ignoring case or not as specified,
+                 and using the culture info specified. The assertion fails if they are not
+                 equal.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first string to compare. This is the string the unit test expects.
+            </param>
+            <param name="actual">
+                 The second string to compare. This is the string the unit test produced.
+            </param>
+            <param name="ignoreCase">
+                 A Boolean value that indicates a case-sensitive or insensitive comparison.
+                 true indicates a case-insensitive comparison.
+            </param>
+            <param name="culture">
+                 A System.Globalization.CultureInfo object that supplies culture-specific
+                 comparison information.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is not equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Boolean,System.String)">
+            
+            <summary>
+                 Verifies that two specified strings are equal, ignoring case or not as specified.
+                 The assertion fails if they are not equal. Displays a message if the assertion
+                 fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first string to compare. This is the string the unit test expects.
+            </param>
+            <param name="actual">
+                 The second string to compare. This is the string the unit test produced.
+            </param>
+            <param name="ignoreCase">
+                 A Boolean value that indicates a case-sensitive or insensitive comparison.
+                 true indicates a case-insensitive comparison.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is not equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual``1(OpenQA.Selenium.IWebDriver,``0,``0,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that two specified generic type data are equal. The assertion fails
+                 if they are not equal. Displays a message if the assertion fails, and applies
+                 the specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first generic type data to compare. This is the generic type data the
+                 unit test expects.
+            </param>
+            <param name="actual">
+                 The second generic type data to compare. This is the generic type data the
+                 unit test produced.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+             Type parameters:
+            <param name="T">
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is not equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.Double,System.Double,System.Double,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that two specified doubles are equal, or within the specified accuracy
+                 of each other. The assertion fails if they are not within the specified accuracy
+                 of each other. Displays a message if the assertion fails, and applies the
+                 specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first double to compare. This is the double the unit tests expects.
+            </param>
+            <param name="actual">
+                 The second double to compare. This is the double the unit test produced.
+            </param>
+            <param name="delta">
+                 The required accuracy. The assertion will fail only if expected is different
+                 from actual by more than delta.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is different from actual by more than delta</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.Single,System.Single,System.Single,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that two specified singles are equal, or within the specified accuracy
+                 of each other. The assertion fails if they are not within the specified accuracy
+                 of each other. Displays a message if the assertion fails, and applies the
+                 specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first single to compare. This is the single the unit test expects.
+            </param>
+            <param name="actual">
+                 The second single to compare. This is the single the unit test produced.
+            </param>
+            <param name="delta">
+                 The required accuracy. The assertion will fail only if expected is different
+                 from actual by more than delta.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is different from actual by more than delta</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Boolean,System.Globalization.CultureInfo,System.String)">
+            
+            <summary>
+                 Verifies that two specified strings are equal, ignoring case or not as specified,
+                 and using the culture info specified. The assertion fails if they are not
+                 equal. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first string to compare. This is the string the unit test expects.
+            </param>
+            <param name="actual">
+                 The second string to compare. This is the string the unit test produced.
+            </param>
+            <param name="ignoreCase">
+                 A Boolean value that indicates a case-sensitive or insensitive comparison.
+                 true indicates a case-insensitive comparison.
+            </param>
+            <param name="culture">
+                 A System.Globalization.CultureInfo object that supplies culture-specific
+                 comparison information.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is not equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Boolean,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that two specified strings are equal, ignoring case or not as specified.
+                 The assertion fails if they are not equal. Displays a message if the assertion
+                 fails, and applies the specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first string to compare. This is the string the unit test expects.
+            </param>
+            <param name="actual">
+                 The second string to compare. This is the string the unit test produced.
+            </param>
+            <param name="ignoreCase">
+                 A Boolean value that indicates a case-sensitive or insensitive comparison.
+                 true indicates a case-insensitive comparison.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is not equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreEqual(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Boolean,System.Globalization.CultureInfo,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that two specified strings are equal, ignoring case or not as specified,
+                 and using the culture info specified. The assertion fails if they are not
+                 equal. Displays a message if the assertion fails, and applies the specified
+                 formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first string to compare. This is the string the unit test expects.
+            </param>
+            <param name="actual">
+                 The second string to compare. This is the string the unit test produced.
+            </param>
+            <param name="ignoreCase">
+                 A Boolean value that indicates a case-sensitive or insensitive comparison.
+                 true indicates a case-insensitive comparison.
+            </param>
+            <param name="culture">
+                 A System.Globalization.CultureInfo object that supplies culture-specific
+                 comparison information.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected is not equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.Object,System.Object)">
+            
+            <summary>
+                 Verifies that two specified objects are not equal. The assertion fails if
+                 the objects are equal.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first object to compare. This is the object the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second object to compare. This is the object the unit test produced.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual``1(OpenQA.Selenium.IWebDriver,``0,``0)">
+            
+            <summary>
+                 Verifies that two specified generic type data are not equal. The assertion
+                 fails if they are equal.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first generic type data to compare. This is the generic type data the
+                 unit test expects not to match actual.
+            </param>
+            <param name="actual">
+                 The second generic type data to compare. This is the generic type data the
+                 unit test produced.
+            </param>
+             Type parameters:
+            <param name="T">
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.Double,System.Double,System.Double)">
+            
+            <summary>
+                 Verifies that two specified doubles are not equal, and not within the specified
+                 accuracy of each other. The assertion fails if they are equal or within the
+                 specified accuracy of each other.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first double to compare. This is the double the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second double to compare. This is the double the unit test produced.
+            </param>
+            <param name="delta">
+                 The required inaccuracy. The assertion fails only if notExpected is equal
+                 to actual or different from it by less than delta.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual or different from it by less than delta</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.Single,System.Single,System.Single)">
+            
+            <summary>
+                 Verifies that two specified singles are not equal, and not within the specified
+                 accuracy of each other. The assertion fails if they are equal or within the
+                 specified accuracy of each other.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first single to compare. This is the single the unit test expects.
+            </param>
+            <param name="actual">
+                 The second single to compare. This is the single the unit test produced.
+            </param>
+            <param name="delta">
+                 The required inaccuracy. The assertion will fail only if notExpected is equal
+                 to actual or different from it by less than delta.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual or different from it by less than delta</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.Object,System.Object,System.String)">
+            
+            <summary>
+                 Verifies that two specified objects are not equal. The assertion fails if
+                 the objects are equal. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first object to compare. This is the object the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second object to compare. This is the object the unit test produced.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Boolean)">
+            
+            <summary>
+                 Verifies that two specified strings are not equal, ignoring case or not as
+                 specified. The assertion fails if they are equal.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first string to compare. This is the string the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second string to compare. This is the string the unit test produced.
+            </param>
+            <param name="ignoreCase">
+                 A Boolean value that indicates a case-sensitive or insensitive comparison.
+                 true indicates a case-insensitive comparison.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual``1(OpenQA.Selenium.IWebDriver,``0,``0,System.String)">
+            
+            <summary>
+                 Verifies that two specified generic type data are not equal. The assertion
+                 fails if they are equal. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first generic type data to compare. This is the generic type data the
+                 unit test expects not to match actual.
+            </param>
+            <param name="actual">
+                 The second generic type data to compare. This is the generic type data the
+                 unit test produced.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+             Type parameters:
+            <param name="T">
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.Double,System.Double,System.Double,System.String)">
+            
+            <summary>
+                 Verifies that two specified doubles are not equal, and not within the specified
+                 accuracy of each other. The assertion fails if they are equal or within the
+                 specified accuracy of each other. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first double to compare. This is the double the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second double to compare. This is the double the unit test produced.
+            </param>
+            <param name="delta">
+                 The required inaccuracy. The assertion fails only if notExpected is equal
+                 to actual or different from it by less than delta.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual or different from it by less than delta</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.Single,System.Single,System.Single,System.String)">
+            
+            <summary>
+                 Verifies that two specified singles are not equal, and not within the specified
+                 accuracy of each other. The assertion fails if they are equal or within the
+                 specified accuracy of each other. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first single to compare. This is the single the unit test expects.
+            </param>
+            <param name="actual">
+                 The second single to compare. This is the single the unit test produced.
+            </param>
+            <param name="delta">
+                 The required inaccuracy. The assertion will fail only if notExpected is equal
+                 to actual or different from it by less than delta.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual or different from it by less than delta</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.Object,System.Object,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that two specified objects are not equal. The assertion fails if
+                 the objects are equal. Displays a message if the assertion fails, and applies
+                 the specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first object to compare. This is the object the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second object to compare. This is the object the unit test produced.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Boolean,System.Globalization.CultureInfo)">
+            
+            <summary>
+                 Verifies that two specified strings are not equal, ignoring case or not as
+                 specified, and using the culture info specified. The assertion fails if they
+                 are equal.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first string to compare. This is the string the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second string to compare. This is the string the unit test produced.
+            </param>
+            <param name="ignoreCase">
+                 A Boolean value that indicates a case-sensitive or insensitive comparison.
+                 true indicates a case-insensitive comparison.
+            </param>
+            <param name="culture">
+                 A System.Globalization.CultureInfo object that supplies culture-specific
+                 comparison information.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Boolean,System.String)">
+            
+            <summary>
+                 Verifies that two specified strings are not equal, ignoring case or not as
+                 specified. The assertion fails if they are equal. Displays a message if the
+                 assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first string to compare. This is the string the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second string to compare. This is the string the unit test produced.
+            </param>
+            <param name="ignoreCase">
+                 A Boolean value that indicates a case-sensitive or insensitive comparison.
+                 true indicates a case-insensitive comparison.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual``1(OpenQA.Selenium.IWebDriver,``0,``0,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that two specified generic type data are not equal. The assertion
+                 fails if they are equal. Displays a message if the assertion fails, and applies
+                 the specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first generic type data to compare. This is the generic type data the
+                 unit test expects not to match actual.
+            </param>
+            <param name="actual">
+                 The second generic type data to compare. This is the generic type data the
+                 unit test produced.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+             Type parameters:
+            <param name="T">
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.Double,System.Double,System.Double,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that two specified doubles are not equal, and not within the specified
+                 accuracy of each other. The assertion fails if they are equal or within the
+                 specified accuracy of each other. Displays a message if the assertion fails,
+                 and applies the specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first double to compare. This is the double the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second double to compare. This is the double the unit test produced.
+            </param>
+            <param name="delta">
+                 The required inaccuracy. The assertion will fail only if notExpected is equal
+                 to actual or different from it by less than delta.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual or different from it by less than delta</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.Single,System.Single,System.Single,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that two specified singles are not equal, and not within the specified
+                 accuracy of each other. The assertion fails if they are equal or within the
+                 specified accuracy of each other. Displays a message if the assertion fails,
+                 and applies the specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first single to compare. This is the single the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second single to compare. This is the single the unit test produced.
+            </param>
+            <param name="delta">
+                 The required inaccuracy. The assertion will fail only if notExpected is equal
+                 to actual or different from it by less than delta.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual or different from it by less than delta</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Boolean,System.Globalization.CultureInfo,System.String)">
+            
+            <summary>
+                 Verifies that two specified strings are not equal, ignoring case or not as
+                 specified, and using the culture info specified. The assertion fails if they
+                 are equal. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first string to compare. This is the string the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second string to compare. This is the string the unit test produced.
+            </param>
+            <param name="ignoreCase">
+                 A Boolean value that indicates a case-sensitive or insensitive comparison.
+                 true indicates a case-insensitive comparison.
+            </param>
+            <param name="culture">
+                 A System.Globalization.CultureInfo object that supplies culture-specific
+                 comparison information.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Boolean,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that two specified strings are not equal, ignoring case or not as
+                 specified. The assertion fails if they are equal. Displays a message if the
+                 assertion fails, and applies the specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first string to compare. This is the string the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second string to compare. This is the string the unit test produced.
+            </param>
+            <param name="ignoreCase">
+                 A Boolean value that indicates a case-sensitive or insensitive comparison.
+                 true indicates a case-insensitive comparison.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotEqual(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Boolean,System.Globalization.CultureInfo,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that two specified strings are not equal, ignoring case or not as
+                 specified, and using the culture info specified. The assertion fails if they
+                 are equal. Displays a message if the assertion fails, and applies the specified
+                 formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first string to compare. This is the string the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second string to compare. This is the string the unit test produced.
+            </param>
+            <param name="ignoreCase">
+                 A Boolean value that indicates a case-sensitive or insensitive comparison.
+                 true indicates a case-insensitive comparison.
+            </param>
+            <param name="culture">
+                 A System.Globalization.CultureInfo object that supplies culture-specific
+                 comparison information.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected is equal to actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotSame(OpenQA.Selenium.IWebDriver,System.Object,System.Object)">
+            
+            <summary>
+                 Verifies that two specified object variables refer to different objects.
+                 The assertion fails if they refer to the same object.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first object to compare. This is the object the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second object to compare. This is the object the unit test produced.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected refers to the same object as actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotSame(OpenQA.Selenium.IWebDriver,System.Object,System.Object,System.String)">
+            
+            <summary>
+                 Verifies that two specified object variables refer to different objects.
+                 The assertion fails if they refer to the same object. Displays a message
+                 if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first object to compare. This is the object the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second object to compare. This is the object the unit test produced.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected refers to the same object as actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreNotSame(OpenQA.Selenium.IWebDriver,System.Object,System.Object,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that two specified object variables refer to different objects.
+                 The assertion fails if they refer to the same object. Displays a message
+                 if the assertion fails, and applies the specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="notExpected">
+                 The first object to compare. This is the object the unit test expects not
+                 to match actual.
+            </param>
+            <param name="actual">
+                 The second object to compare. This is the object the unit test produced.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">notExpected refers to the same object as actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreSame(OpenQA.Selenium.IWebDriver,System.Object,System.Object)">
+            
+            <summary>
+                 Verifies that two specified object variables refer to the same object. The
+                 assertion fails if they refer to different objects.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first object to compare. This is the object the unit test expects.
+            </param>
+            <param name="actual">
+                 The second object to compare. This is the object the unit test produced.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected does not refer to the same object as actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreSame(OpenQA.Selenium.IWebDriver,System.Object,System.Object,System.String)">
+            
+            <summary>
+                 Verifies that two specified object variables refer to the same object. The
+                 assertion fails if they refer to different objects. Displays a message if
+                 the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first object to compare. This is the object the unit test expects.
+            </param>
+            <param name="actual">
+                 The second object to compare. This is the object the unit test produced.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected does not refer to the same object as actual</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.AreSame(OpenQA.Selenium.IWebDriver,System.Object,System.Object,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that two specified object variables refer to the same object. The
+                 assertion fails if they refer to different objects. Displays a message if
+                 the assertion fails, and applies the specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="expected">
+                 The first object to compare. This is the object the unit test expects.
+            </param>
+            <param name="actual">
+                 The second object to compare. This is the object the unit test produced.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">expected does not refer to the same object as actual</exception>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.Fail(OpenQA.Selenium.IWebDriver)" -->
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.Fail(OpenQA.Selenium.IWebDriver,System.String)">
+            
+            <summary>
+                 Fails the assertion without checking any conditions. Displays a message.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="message">
+                 A message to display. This message can be seen in the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">Always thrown</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.Fail(OpenQA.Selenium.IWebDriver,System.String,System.Object[])">
+            
+            <summary>
+                 Fails the assertion without checking any conditions. Displays a message,
+                 and applies the specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="message">
+                 A message to display. This message can be seen in the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">Always thrown</exception>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.Inconclusive(OpenQA.Selenium.IWebDriver)" -->
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.Inconclusive(OpenQA.Selenium.IWebDriver,System.String)">
+            
+            <summary>
+                 Indicates that the assertion can not be verified. Displays a message.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="message">
+                 A message to display. This message can be seen in the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException">Always thrown</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.Inconclusive(OpenQA.Selenium.IWebDriver,System.String,System.Object[])">
+            
+            <summary>
+                 Indicates that an assertion can not be verified. Displays a message, and
+                 applies the specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="message">
+                 A message to display. This message can be seen in the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException">Always thrown</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsFalse(OpenQA.Selenium.IWebDriver,System.Boolean)">
+            
+            <summary>
+                 Verifies that the specified condition is false. The assertion fails if the
+                 condition is true.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="condition">
+                 The condition to verify is false.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">condition evaluates to true</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsFalse(OpenQA.Selenium.IWebDriver,System.Boolean,System.String)">
+            
+            <summary>
+                 Verifies that the specified condition is false. The assertion fails if the
+                 condition is true. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="condition">
+                 The condition to verify is false.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">condition evaluates to true</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsFalse(OpenQA.Selenium.IWebDriver,System.Boolean,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that the specified condition is false. The assertion fails if the
+                 condition is true. Displays a message if the assertion fails, and applies
+                 the specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="condition">
+                 The condition to verify is false.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">condition evaluates to true</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsInstanceOfType(OpenQA.Selenium.IWebDriver,System.Object,System.Type)">
+            
+            <summary>
+                 Verifies that the specified object is an instance of the specified type.
+                 The assertion fails if the type is not found in the inheritance hierarchy
+                 of the object.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="value">
+                 The object to verify is of expectedType.
+            </param>
+            <param name="expectedType">
+                 The type expected to be found in the inheritance hierarchy of value.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">
+                 value is null or expectedType is not found in the inheritance hierarchy of
+                 value.
+            </exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsInstanceOfType(OpenQA.Selenium.IWebDriver,System.Object,System.Type,System.String)">
+            
+            <summary>
+                 Verifies that the specified object is an instance of the specified type.
+                 The assertion fails if the type is not found in the inheritance hierarchy
+                 of the object. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="value">
+                 The object to verify is of expectedType.
+            </param>
+            <param name="expectedType">
+                 The type expected to be found in the inheritance hierarchy of value.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">
+               Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException:
+                 value is null or expectedType is not found in the inheritance hierarchy of
+                 value.
+                 </exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsInstanceOfType(OpenQA.Selenium.IWebDriver,System.Object,System.Type,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that the specified object is an instance of the specified type.
+                 The assertion fails if the type is not found in the inheritance hierarchy
+                 of the object. Displays a message if the assertion fails, and applies the
+                 specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="value">
+                 The object to verify is of expectedType.
+            </param>
+            <param name="expectedType">
+                 The type expected to be found in the inheritance hierarchy of value.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">
+                 value is null or expectedType is not found in the inheritance hierarchy of
+                 value.
+            </exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsNotInstanceOfType(OpenQA.Selenium.IWebDriver,System.Object,System.Type)">
+            
+            <summary>
+                 Verifies that the specified object is not an instance of the specified type.
+                 The assertion fails if the type is found in the inheritance hierarchy of
+                 the object.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="value">
+                 The object to verify is not of wrongType.
+            </param>
+            <param name="wrongType">
+                 The type that should not be found in the inheritance hierarchy of value.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">
+                 value is not null and wrongType is found in the inheritance hierarchy of
+                 value.
+             </exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsNotInstanceOfType(OpenQA.Selenium.IWebDriver,System.Object,System.Type,System.String)">
+            
+            <summary>
+                 Verifies that the specified object is not an instance of the specified type.
+                 The assertion fails if the type is found in the inheritance hierarchy of
+                 the object. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="value">
+                 The object to verify is not of wrongType.
+            </param>
+            <param name="wrongType">
+                 The type that should not be found in the inheritance hierarchy of value.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">
+                 value is not null and wrongType is found in the inheritance hierarchy of
+                 value.
+                 </exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsNotInstanceOfType(OpenQA.Selenium.IWebDriver,System.Object,System.Type,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that the specified object is not an instance of the specified type.
+                 The assertion fails if the type is found in the inheritance hierarchy of
+                 the object. Displays a message if the assertion fails, and applies the specified
+                 formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="value">
+                 The object to verify is not of wrongType.
+            </param>
+            <param name="wrongType">
+                 The type that should not be found in the inheritance hierarchy of value.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">
+                 value is not null and wrongType is found in the inheritance hierarchy of
+                 value.
+                 </exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsNotNull(OpenQA.Selenium.IWebDriver,System.Object)">
+            
+            <summary>
+                 Verifies that the specified object is not null. The assertion fails if it
+                 is null.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="value">
+                 The object to verify is not null.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">value is null</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsNotNull(OpenQA.Selenium.IWebDriver,System.Object,System.String)">
+            
+            <summary>
+                 Verifies that the specified object is not null. The assertion fails if it
+                 is null. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="value">
+                 The object to verify is not null.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">value is null</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsNotNull(OpenQA.Selenium.IWebDriver,System.Object,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that the specified object is not null. The assertion fails if it
+                 is null. Displays a message if the assertion fails, and applies the specified
+                 formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="value">
+                 The object to verify is not null.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">value is null</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsNull(OpenQA.Selenium.IWebDriver,System.Object)">
+            
+            <summary>
+                 Verifies that the specified object is null. The assertion fails if it is
+                 not null.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="value">
+                 The object to verify is null.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">value is not null</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsNull(OpenQA.Selenium.IWebDriver,System.Object,System.String)">
+            
+            <summary>
+                 Verifies that the specified object is null. The assertion fails if it is
+                 not null. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="value">
+                 The object to verify is null.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">value is not null</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsNull(OpenQA.Selenium.IWebDriver,System.Object,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that the specified object is null. The assertion fails if it is
+                 not null. Displays a message if the assertion fails, and applies the specified
+                 formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="value">
+                 The object to verify is null.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">value is not null</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsTrue(OpenQA.Selenium.IWebDriver,System.Boolean)">
+            
+            <summary>
+                 Verifies that the specified condition is true. The assertion fails if the
+                 condition is false.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="condition">
+                 The condition to verify is true.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">condition evaluates to false</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsTrue(OpenQA.Selenium.IWebDriver,System.Boolean,System.String)">
+            
+            <summary>
+                 Verifies that the specified condition is true. The assertion fails if the
+                 condition is false. Displays a message if the assertion fails.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="condition">
+                 The condition to verify is true.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">condition evaluates to false</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.IsTrue(OpenQA.Selenium.IWebDriver,System.Boolean,System.String,System.Object[])">
+            
+            <summary>
+                 Verifies that the specified condition is true. The assertion fails if the
+                 condition is false. Displays a message if the assertion fails, and applies
+                 the specified formatting to it.
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="condition">
+                 The condition to verify is true.
+            </param>
+            <param name="message">
+                 A message to display if the assertion fails. This message can be seen in
+                 the unit test results.
+            </param>
+            <param name="parameters">
+                 An array of parameters to use when formatting message.
+            </param>
+            <exception cref="T:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException">condition evaluates to false</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.AssertWithScreenCapture.ReplaceNullChars(System.String)">
+            
+            <summary>
+                 In a string, replaces null characters ('\0') with "\\0".
+            </summary>
+             <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="input">
+                 The string in which to search for and replace null characters.
+            </param>
+             Returns:
+                 The converted string with null characters replaced by "\\0".
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.Properties.Resources.DummyImage">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WhatAmI.GetTestAttributes">
+            <summary>
+            get the test attributes of the test method
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WhatAmI.TestContext">
+            <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WhatAmI.MethodInfo">
+            <summary>
+            the test method information
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WhatAmI.TestAttributes">
+            <summary>
+            a dicationary of test attributes of the test method
+            </summary>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.DataGridHelper">
+            <summary>
+            Used to help parse HTML produced by asp.net datagrids
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.DataGridHelper.GetDataGridRows(OpenQA.Selenium.IWebElement,OpenQA.Selenium.By)">
+            <summary>
+            returns a collection of IWebElements, each of which is  the html output equivalent of a DataRow
+            </summary>
+            <param name="dataGridElement">IWebElement that represents a datagrid</param>
+            <param name="dataGridRowsBy">a 'By' selenium selection criteria, used to select a collection of html equivalent datarows</param>
+            <returns>a collection of IWebElements, each of which is  the html output equivalent of a DataRow</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.DataGridHelper.GetColumnDataFromDataGrid(OpenQA.Selenium.IWebElement,OpenQA.Selenium.By,OpenQA.Selenium.By,System.String[])">
+            <summary>
+            returns a DataTable, containing tabular data present in the provided web element, extracting the columns specified in the columnheaders array
+            </summary>
+            <param name="dataGridElement">IWebElement that represents a datagrid</param>
+            <param name="headersBy">a 'By' selenium selection criteria, used to select a collection of html equivalent column headers, the position/index of which is used to select the data in the rows</param>
+            <param name="dataGridRowsBy">a 'By' selenium selection criteria, used to select a collection of html equivalent datarows</param>
+            <param name="columnHeaders">an array of columnheader names. these need to match the text in the header, and will be used as the datacolumn names in the output</param>
+            <returns>returns a DataTable, containing tabular data present in the provided datagrid element, extracting the columns specified in the columnheaders array</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.DataGridHelper.GetColumnDataFromDataGrid(OpenQA.Selenium.IWebElement,OpenQA.Selenium.By,OpenQA.Selenium.By,Schoolnet.SeleniumWebHelper.DataGridColumnTransformer[])">
+            <summary>
+            returns a DataTable, containing tabular data present in the provided web element, extracting the columns specified in the columnTransformers array
+            </summary>
+            <param name="dataGridElement">IWebElement that represents a datagrid</param>
+            <param name="headersBy">a 'By' selenium selection criteria, used to select a collection of html equivalent column headers, the position/index of which is used to select the data in the rows</param>
+            <param name="dataGridRowsBy">a 'By' selenium selection criteria, used to select a collection of html equivalent datarows</param>
+            <param name="columnTransformers">an array of column transformers, sued to extract column names</param>
+            <returns>returns a DataTable, containing tabular data present in the provided datagrid element, extracting the columns specified in the columnTransformers array</returns>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.DataGridColumnTransformer">
+            <summary>
+            class used to transform an IWebElements into a column name
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.DataGridColumnTransformer.#ctor(System.String,System.Func{OpenQA.Selenium.IWebElement,System.String})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="columnName">name of the column wich will use this transformer</param>
+            <param name="tdToStringFunc">function to extract or transform the data from the IWEbElement</param>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.DataGridColumnTransformer.ColumnName">
+            <summary>
+            resulting columnName
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.DataGridColumnTransformer.DataColumnName">
+            <summary>
+            column name that is legal for use in a DataColumn
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.DataGridColumnTransformer.TdToStringFunc">
+            <summary>
+            delegate to a function that will take an IWebElement, and extract datacell data from it
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.DriverInitializer.GetRawWebDriver(Schoolnet.SeleniumHelperShared.WebHelperConfigSection.WebDriverTypes)">
+            <summary>
+            gets a Selenium Web Driver instance, effectively the web browser, initialized using the provided Web Driver Type
+            </summary>
+            <param name="driverType">enum of the supported browsers, currently Firefox is the preferred browser</param>
+            <returns>Selenium Web Driver instance, effectively the web browser</returns>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.DriverInitializer.AdminUsername">
+            <summary>
+            the Admin username you have stored in the app.config. used to login as admin
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.DriverInitializer.AdminPassword">
+            <summary>
+            the Admin password you have stored in the app.config. used to login as admin
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.DriverInitializer.WebDriverType">
+            <summary>
+            type of web browser that will be used when tests are run, stored in the app.config. 
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.DriverInitializer.StartingUrlSingleTenant">
+            <summary>
+            Url which will be loaded initially by the browser, stored in the app.config
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.DriverInitializer.MultiTenantDistrictName">
+            <summary>
+            district name in multiple tenant sites stored in app.config       
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.DriverInitializer.StartingUrlMultiTenant">
+            <summary>
+            Url which will be loaded initially by the browser, stored in the app.config
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.DriverInitializer.FileDownloadDirectory">
+            <summary>
+            Path stored in app.config where the downloaded files will be available
+            </summary>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.DriverWrapper">
+            <summary>
+            Class that wraps the IWebDriver. implements IWebDriver Interface, plus adds aditional functionality, like driver instance cleanup, and taking HMTL and image screenshot of the browser
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.DriverWrapper.QuitAll">
+            <summary>
+            Walks through the collection of all webdriver intances created, and quits them
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Schoolnet.SeleniumWebHelper.DriverWrapper.#ctor(OpenQA.Selenium.IWebDriver)" -->
+        <member name="M:Schoolnet.SeleniumWebHelper.DriverWrapper.Close">
+            <summary>
+                Close the current window, quitting the browser if it is the last window currently
+                open.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Schoolnet.SeleniumWebHelper.DriverWrapper.Manage" -->
+        <member name="M:Schoolnet.SeleniumWebHelper.DriverWrapper.Navigate">
+            <summary>
+                Instructs the driver to navigate the browser to another location.
+            </summary>
+            <returns>
+                An OpenQA.Selenium.INavigation object allowing the user to access the browser's
+                history and to navigate to a given URL.
+            </returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Schoolnet.SeleniumWebHelper.DriverWrapper.Quit" -->
+        <member name="M:Schoolnet.SeleniumWebHelper.DriverWrapper.SwitchTo">
+            <summary>
+                Instructs the driver to send future commands to a different frame or window.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.DriverWrapper.FindElement(OpenQA.Selenium.By)">
+            <summary>
+                Finds the first OpenQA.Selenium.IWebElement using the given method.
+            </summary>
+            <param name="by">The locating mechanism to use.</param>
+            <returns>The first matching OpenQA.Selenium.IWebElement on the current context.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">If no element matches the criteria.</exception>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Schoolnet.SeleniumWebHelper.DriverWrapper.FindElements(OpenQA.Selenium.By)" -->
+        <!-- Badly formed XML comment ignored for member "M:Schoolnet.SeleniumWebHelper.DriverWrapper.ExecuteAsyncScript(System.String,System.Object[])" -->
+        <member name="M:Schoolnet.SeleniumWebHelper.DriverWrapper.ExecuteScript(System.String,System.Object[])">
+             <summary>
+                 Executes JavaScript asynchronously in the context of the currently selected
+                 frame or window.
+             </summary>
+             <param name="script">
+                 The JavaScript code to execute.
+            </param>
+             <param name="args">
+                 The arguments to the script.
+             </param>
+             <returns>
+                 The value returned by the script.
+             </returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.DriverWrapper.TakeScreenshot(System.String)">
+            <summary>
+            captures the current browser window and stores it as a jpg file in the current appdomain directory, in a subfolder called "screenshots"
+            </summary>
+            <param name="ScreenShotIdentifier">filename prefix</param>
+            <returns>the current machine name plus the local path to the file</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.DriverWrapper.TakeHTMLshot(System.String)">
+            <summary>
+            captures the html in the current browser window and stores it as in the current appdomain directory, in a subfolder called "HTMLShots"
+            </summary>
+            <param name="ScreenShotIdentifier">filename prefix</param>
+            <returns>the current machine name plus the local path to the file</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.DriverWrapper.GetScreenshot">
+            <summary>
+            Gets a OpenQA.Selenium.Screenshot object representing the image of the page on the screen.
+            </summary>
+            <returns>A OpenQA.Selenium.Screenshot object containing the image.</returns>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.DriverWrapper.CurrentWindowHandle">
+            <summary>
+                Gets the current window handle, which is an opaque handle to this window
+                that uniquely identifies it within this driver instance.        /// </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.DriverWrapper.PageSource">
+            <summary>
+                Gets the source of the page last loaded by the browser.
+            </summary>
+            <remarks>
+                If the page has been modified after loading (for example, by JavaScript)
+                there is no guarentee that the returned text is that of the modified page.
+                Please consult the documentation of the particular driver being used to determine
+                whether the returned text reflects the current state of the page or the text
+                last sent by the web server. The page source returned is a representation
+                of the underlying DOM: do not expect it to be formatted or escaped in the
+                same way as the response sent from the web server.        /// </remarks>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Schoolnet.SeleniumWebHelper.DriverWrapper.Title" -->
+        <!-- Badly formed XML comment ignored for member "P:Schoolnet.SeleniumWebHelper.DriverWrapper.Url" -->
+        <member name="P:Schoolnet.SeleniumWebHelper.DriverWrapper.WindowHandles">
+            <summary>
+                Gets the window handles of open browser windows.
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.DriverWrapper.Keyboard">
+            <summary>
+            Gets an OpenQA.Selenium.IKeyboard object for sending keystrokes to the browser.
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.DriverWrapper.Mouse">
+            <summary>
+            Gets an OpenQA.Selenium.IMouse object for sending mouse commands to the browser.
+            </summary>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.HtmlEditorHelper">
+             <summary>
+             helper class, used to interact with the embedded rich text editor
+             </summary>
+            <example>
+             1. A pop-up HTML editor
+             HtmlEditorHelper ed = new HtmlEditorHelper( driver, "HtmlEditor_Editor1", "divEditor" ); 
+             ed.OpenEditor( "div[class='itemContent'][title='Click to edit']" ); 
+             ed.SetText( "This is my text." ); 
+             ed.CloseEditor( "input[type='button'][value='Save']" ); 
+              
+             2. An editor that is always visible on the page 
+             HtmlEditorHelper ed = new HtmlEditorHelper( driver, "HtmlEditor_Editor1"" ); 
+             ed.SetText( "This is my text." ); 
+            </example>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.HtmlEditorHelper.#ctor(OpenQA.Selenium.IWebDriver,System.String)">
+            <summary>
+            Initialize an HTML Editor helper instance.
+            Use this constructor when the HTML Editor is already visible on the page.
+            </summary>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="editorID">id for the text editor web element</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.HtmlEditorHelper.#ctor(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Boolean)">
+            <summary>
+            Initialize an HTML Editor helper instance.
+            Use this constructor when the HTML Editor is embedded in a pseudo pop-up window.
+            </summary>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="editorID">id for the text editor web element</param>
+            <param name="popUpElement">id for the div that contains the editor, if the editor is configured as a popup</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.HtmlEditorHelper.OpenEditor(System.String)">
+            <summary>
+            If the HTML Editor is configured as a pop-up dialog, use this method to display it.
+            </summary>
+            <param name="openElement">css selector string which will select the element to click, to cause the editor popup to appear</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.HtmlEditorHelper.CloseEditor(System.String)">
+            <summary>
+            If the HTML Editor is configured as a pop-up, use this method to close the pop-up, after you've entered text into the editor.
+            </summary>
+            <param name="saveElement">css selector string which will select the element to click, to cause the editor popup to save its content and close the pop-up</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.HtmlEditorHelper.SetText(System.String,Schoolnet.SeleniumDTOs.TestItemTypes)">
+            <summary>
+            Type the specified text into the HTML Editor.
+            </summary>
+            <param name="text">text to type into the editor</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.HtmlEditorHelper.UploadImage(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext,System.String,OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Upload image use AutoIt
+            </summary>
+            <param name="testContext"></param>
+            <param name="imagePath"></param>
+            <param name="driver"></param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.HtmlEditorHelper.SearchForImageInText">
+            <summary>
+            Search image displayed in the editor
+            </summary>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.IWebElementExtensions">
+            <summary>
+            Class containing extension methods for IWebHelper interface
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.IWebElementExtensions.ClickAndVerify(OpenQA.Selenium.IWebElement)">
+            <summary>
+            click the provided element, and verify's that the resulting page has not thrown a server side exception. If it does, record the errro message and stack trace from the HTML, in the assert failure
+            </summary>
+            <param name="element">web element to click</param>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.NativeMethodsHelper">
+            <summary>
+            Class used to interact natively with the GUI (DO NOT USE)
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.NativeMethodsHelper.FindWindow(System.String,System.Boolean)">
+             <summary>
+            Find window by Caption, and wait 1/2 a second and then try again. 
+             </summary>
+             <param name="windowName">name of the window to find</param>
+             <param name="wait">whether we should wait 1/2 second for retry</param>
+             <returns></returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.NativeMethodsHelper.SendEnterKey">
+            <summary>
+            send an enter key to the current window
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.NativeMethodsHelper.GetActiveWindowText">
+            <summary>
+            get the active window text (DO NOT USE)
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.NativeMethodsHelper.GetForegroundWindowText">
+            <summary>
+            Get the foreground window text (DO NOT USE)
+            </summary>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.PSWebHelper">
+            <summary>
+            Static class that contains methods for testing features of the Power School and Schoolnet integration
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.PSWebHelper.GetWebDriver(Schoolnet.SeleniumWebHelper.PSWebHelper.PowerSchoolWebSiteType,System.Func{OpenQA.Selenium.IWebDriver})">
+            <summary>
+            gets a Selenium Web Driver instance, effectively the web browser, 
+            initialized using the default Web Driver Type, 
+            and Starting URL as defined in app.config determined by siteType param
+            </summary>
+            <param name="siteType">The PowerSchool site type</param>
+            <param name="GetRawWebDriverFunc"></param>
+            <returns>Selenium Web Driver instance, effectively the web browser</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.PSWebHelper.LoginToPS(OpenQA.Selenium.IWebDriver,Schoolnet.SeleniumWebHelper.PSWebHelper.PowerSchoolWebSiteType)">
+            <summary>
+            Logins to PowerSchool
+            </summary>
+            <param name="driver">Selenium Web Driver instance</param>
+            <param name="siteType">The PowerSchool site type</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.PSWebHelper.SSOtoSN(OpenQA.Selenium.IWebDriver,Schoolnet.SeleniumWebHelper.PSWebHelper.PowerSchoolWebSiteType)">
+            <summary>
+            SSO into SN from PowerSchool
+            </summary>
+            <param name="driver">Selenium Web Driver instance</param>
+            <param name="siteType">The PowerSchool site type</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.PSWebHelper.LogoutOfPSAfterSSOLogout(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Logout of PowerSchool after SSO Schoolnet logout
+            </summary>
+            <param name="driver">Selenium Web Driver instance</param>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.School">
+            <summary>
+            represents the full institution path for a school. in single tenant cases, StateName might not be populated. If regions are disabled, RegionName might not be populated 
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.School.StateName">
+            <summary>
+            the name of the State that the school is in, only used in multi-tenant installations
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.School.DistrictName">
+            <summary>
+            the name of the school district that the school belongs to 
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.School.RegionName">
+            <summary>
+            the name of the region that the school is in. this is only poplulated if regions are disabled
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.School.SchoolName">
+            <summary>
+            the name of the school
+            </summary>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.SchoolnetRole">
+            <summary>
+            Role for a schoolnet user, indiactes which operations a user with this role is permitted to execute
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.SchoolnetRole.Name">
+            <summary>
+            Name of the role
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.SchoolnetRole.Description">
+            <summary>
+            Description of the role
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.SchoolnetRole.Operations">
+            <summary>
+            list of operation names associated with this role
+            </summary>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.SeleniumServerLauncher">
+            <summary>
+            helper class, used to support selenium remote driver
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.SeleniumServerLauncher.LaunchSeleniumServer">
+            <summary>
+            launch the selenium server process on the local machine, if its not already running
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.SectionKey.DistrictOrRegionName">
+            <summary>
+            region or district (if regions are disabled) that the school is in
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.SectionKey.SchoolName">
+            <summary>
+            the name of the school
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.SectionKey.TeacherFirstName">
+            <summary>
+            first name of the teacher, teaching the section
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.SectionKey.TeacherLastName">
+            <summary>
+            last name of the teacher, teaching the section
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.SmokeHelper.EnsureCheckBoxChecked(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.Boolean)">
+            <summary>
+            Finds the checkbox and clicks it or not depending on the arguments. If checkbox is already in the correct state does nothing.
+            </summary>
+            <param name="driver">driver to use</param>
+            <param name="checkBoxSelector">selector to find the checkbox</param>
+            <param name="hasToBeChecked">false if the result should be an unchecked checkbox</param>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.SN_DataViewHelper">
+            <summary>
+            Helper for the SN_dataviewCtrl component, it allows navigation through the whole view 
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.SN_DataViewHelper.NavigateThrough(System.String,OpenQA.Selenium.IWebDriver,System.Func{OpenQA.Selenium.IWebElement,Schoolnet.SeleniumWebHelper.SN_DataViewHelper.ExtractedData,System.Boolean})">
+            <summary>
+            Navigates through all the pages of a dataview control and calls the ProcessDataFromPage method for each page
+            - it will try to set the page to biggest items per page example 500 
+            - can be stopped by returning true in the ProcessDataFromPage action
+            </summary>
+            <param name="GridClientID">the ID of the control from the .net page</param>
+            <param name="driver">the web driver</param>
+            <param name="ProcessDataFromPage">action for processing data from the current page</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.SN_DataViewHelper.ExtractDataFromTable(System.String,OpenQA.Selenium.IWebDriver,System.String,System.String,System.String)">
+            <summary>
+            Extracts all the text data from a table and returns all rows as an array of string arrays
+            </summary>
+            <param name="TableCSSSelector">Selector for the table element example #mytable or table.mytableclass </param>
+            <param name="driver">the driver</param>
+            <returns></returns>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.SN_DataViewHelper.ExtractedData">
+            <summary>
+            Table data
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.TestContextExtensions.RunAutoItProcess(System.Diagnostics.ProcessStartInfo,System.Action,System.String)">
+            <summary>
+            runs the provided process, then call the doBeforeUpload action if there is one, 
+            then block until process completes. This is necessary, since auto it script will 
+            be manpulating operating systems dialogs (like save dialos), and if you do a 
+            web driver action that produces one of these dialogs, Web driver will block, 
+            and your autoit script will not get executed.
+            </summary>
+            <param name="processStartInfo">process (probably autoit process) to execute</param>
+            <param name="doBeforeUpload">action (probably a webdiver click that causes some operating system stuff)</param>
+            <param name="errorMessage">text to return in the event of an error</param>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.WebDriverWait_WithFullDetails">
+            <summary>
+            <see cref="T:OpenQA.Selenium.Support.UI.WebDriverWait" /> implementation that captures the screen state in the event of a timeout
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverWait_WithFullDetails.#ctor(OpenQA.Selenium.IWebDriver,System.TimeSpan,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OpenQA.Selenium.Support.UI.WebDriverWait" /> class.
+            </summary>
+            <param name="driver">The WebDriver instance used to wait.</param>
+            <param name="timeout">The timeout value indicating how long to wait for the condition.</param>
+            <param name="ScreenShotIdentifier">filename prefix for the captured image and html file</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverWait_WithFullDetails.#ctor(OpenQA.Selenium.Support.UI.IClock,OpenQA.Selenium.IWebDriver,System.TimeSpan,System.TimeSpan,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OpenQA.Selenium.Support.UI.WebDriverWait" /> class.
+            </summary>
+            <param name="clock">An object implementing the <see cref="T:OpenQA.Selenium.Support.UI.IClock" /> interface used to determine when time has passed.</param>
+            <param name="driver">The WebDriver instance used to wait.</param>
+            <param name="timeout">The timeout value indicating how long to wait for the condition.</param>
+            <param name="sleepInterval">A <see cref="T:System.TimeSpan" /> value indiciating how often to check for the condition to be true.</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverWait_WithFullDetails.Until``1(System.Func{OpenQA.Selenium.IWebDriver,``0},System.String)">
+            <summary>
+            Waits until a condition is true or times out.
+            </summary>
+            <typeparam name="TResult">The type of result to expect from the condition.</typeparam>
+            <param name="condition">A delegate taking an <see cref="T:OpenQA.Selenium.IWebDriver" /> as its parameter, and returning a TResult.</param>
+            <param name="CustomErrorMessage">message to use instaed of the default timeout message</param>
+            <returns>If TResult is a boolean, the method returns <see langword="true" /> when the condition is true, and <see langword="false" /> otherwise.
+            If TResult is an object, the method returns the object when the condition evaluates to a value other than <see langword="null" />.</returns>
+            <exception cref="T:System.ArgumentException">Thrown when TResult is not boolean or an object type.</exception>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.StudentExtensions">
+            <summary>
+            Extension class for student class
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.StudentExtensions.GetUser(Schoolnet.SeleniumDTOs.Student,OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Extracts a schoonet user object for the student. it also repairs the studen't role, so that its possble for the student to login
+            </summary>
+            <param name="student"></param>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <returns>schoolnet user for this student</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.StudentExtensions.GetDetail(Schoolnet.SeleniumDTOs.Student,OpenQA.Selenium.IWebDriver)">
+            <summary>
+            get a student detail object for the provided student, leaves the browser on the student details page
+            </summary>
+            <param name="student">student to get detail information on</param>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <returns>the enriched student detail object</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.StudentExtensions.UnlinkGuardian(Schoolnet.SeleniumDTOs.Student,OpenQA.Selenium.IWebDriver,Schoolnet.SeleniumDTOs.SchoolnetUser)">
+            <summary>
+            unlinks the student from the guardian schoolnet user
+            </summary>
+            <param name="student">student, linked to the guardian</param>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="guardian">Guardian user to unlink</param>
+            <returns>the student, with the guardian unlinked, returned to support fluent syntax</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.StudentExtensions.LinkToGuardian(Schoolnet.SeleniumDTOs.Student,OpenQA.Selenium.IWebDriver,Schoolnet.SeleniumDTOs.SchoolnetUser)">
+            <summary>
+            links the student to a guardian
+            </summary>
+            <param name="student">a student</param>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="guardian">Guardian user to link</param>
+            <returns>the student, with the guardian linked, returned to support fluent syntax</returns>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.WebDriverExtensions">
+            <summary>
+            Class extending IWebDriver
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverExtensions.LoadJQuery(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            loads JQuery in this web driver's intstance, for later use
+            </summary>
+            <param name="driver">IWebDriver instance</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverExtensions.IsJQueryLoaded(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            tst to see if we have already loaded JQuery into the webdriver instance
+            </summary>
+            <param name="driver">IWEbDriver instance</param>
+            <returns>whether JQuery is aready loaded</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverExtensions.WaitForAjaxRequest(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            pools to see if all ajax requests have completed
+            </summary>
+            <param name="driver">IWebDriver instance</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverExtensions.FindElementAndClickWithLoadTime(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)">
+            <summary>
+            Find an element, click it, and report the elapsed time to the debugger output window
+            </summary>
+            <param name="driver">IWebDriver instance</param>
+            <param name="by">Mechanism to select the element to click</param>
+            <returns>the amount of time elapsed</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">If no element matches the criteria.</exception>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverExtensions.FindElementAndClick(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.String)">
+            <summary>
+            Find an visible element to click
+            </summary>
+            <param name="driver">IWebDriver instance</param>
+            <param name="by">Selector for an element</param>
+            <returns>An visible element</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverExtensions.FindVisibleElement(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.String)">
+            <summary>
+            Find an visible element
+            </summary>
+            <param name="driver">IWebDriver instance</param>
+            <param name="by">Selector for an element</param>
+            <returns>An visible element</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverExtensions.FindVisibleElements(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)">
+            <summary>
+            Find visible elements
+            </summary>
+            <param name="driver">IWebDriver instance</param>
+            <param name="by">Selector for visible elements</param>
+            <returns>All visible element</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverExtensions.IsAjaxRequestInProgress(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            indicates whether there are any ajax request still in progress
+            </summary>
+            <param name="driver">IWebHelper instance</param>
+            <returns>Whther or not there are still ajax requests in progress</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverExtensions.InjectAjaxMonitor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            injects the ajax monitor javascript into the current webdriver instance. used to detect whether there are any pending in progress ajax requests
+            </summary>
+            <param name="driver">IWebDriver instance</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverExtensions.InjectImageCheck(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            injects the image javascript into the current webdriver instance. used to detect whether there are any broken image links on the most recently loaded page
+            </summary>
+            <param name="driver">IWebDriver instance</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverExtensions.AreBrokenImages(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            indicates whether there are any borken image link on the most recently loaded page
+            </summary>
+            <param name="driver"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverExtensions.QueryString(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            parese the most recent request's query string
+            </summary>
+            <param name="driver">IWebDriver instance</param>
+            <returns></returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebDriverExtensions.CloseHelpWindow(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Closes the help popup window
+            </summary>
+            <param name="driver">IWebdriver</param>
+        </member>
+        <member name="T:Schoolnet.SeleniumWebHelper.WebHelper">
+            <summary>
+            Static class containing method you can use to simplyfy your selenium web tests
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.TenantName(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            the tenant name of the driver or the default tenant stored in the app.config. used to login as district Admin, and whereever a tenant name is required
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.SecondTenantName(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The Name of the second Tenant
+            </summary>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.IsMultiTenant(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Returns a boolean indicating that the site is multi tenant. Does so by logging in as System admin, going to System operations / Institutions, and seeing if the top level institution is a district or not
+            </summary>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <returns>a boolean indicating that the site is multi tenant.</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.AreRegionsConfigured(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Returns a boolean indicating that the site is has regions configured. Does so by logging in as System admin, going to going to System operations / Institutions, and seeing if there is an institution marked as a region or not
+            </summary>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <returns>a boolean indicating that the site is multi tenant. Does so by either reading the app.config looking for a IsMultiTenant attribute on the SeleniumWebHelper tag, Or by logging in as System admin, going to the dashboard, and seeing if the profile indicates that the top level institution is a district or not</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.StateName(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Fetches the state name for the current web server. Does so by either reading the app.config looking for a StateName attribute on the SeleniumWebHelper tag, Or by logging in as System admin, and fetching the top level Institution on the dashboard, if the site is multi tenant. Please note that of the site is single tenant, and no state Admin is specified in the app config, this will return null.
+            </summary>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <returns>the state name specified in app config, StateName attribute on the SeleniumWebHelper tag, or the top level institution for the web server, if the server is multi tenant</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.DistrictName(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Fetches the district name for the current web server. Does so by either reading the app.config looking for a DistrictName attribute on the SeleniumWebHelper tag, Or by logging in as System admin, and fetching the top level Institution on the dashboard, if the site is single tenant. Please note that of the site is multi tenant, and no district Admin is specified in the app config, this will return null.
+            </summary>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <returns>the district name specified in app config, DistrictName attribute on the SeleniumWebHelper tag, or the top leve institution for the web server, if the server is single tenant</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.SecondDistrictName(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The district in a second tenant.
+            </summary> 
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GetSelectedElement(OpenQA.Selenium.Support.UI.WebDriverWait,OpenQA.Selenium.By,OpenQA.Selenium.By)">
+            <summary>
+            This method will get selected tab using the wait handle process
+            in order to avoid time out exception.
+            </summary>
+            <param name="wait">WebdriverWait handle</param>
+            <param name="tabname">string: tabname to be found</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.ExactSearch(System.Collections.Generic.List{OpenQA.Selenium.IWebElement},System.String,System.Int32)">
+            <summary>
+            This method will search based on specific title with in the result. 
+            </summary>
+            <param name="allRowElements">List has search details </param>
+            <param name="Title">Title Name what we are going to search</param>
+            <param name="titleIndex">Title Index</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.RegionName(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Fetches the ; name for the current web server. Does so by either reading the app.config looking for a RegionName attribute on the SeleniumWebHelper tag, Or by logging in as System admin, and fetching the top level Institution on the dashboard, if the site is single tenant. Please note that of the site is multi tenant, and no Region Admin is specified in the app config, this will return null.
+            </summary>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <returns>the Region name specified in app config, RegionName attribute on the SeleniumWebHelper tag, or the first region in the institution dropdown for the specified District on the web server</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.SchoolName(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Fetches the ; name for the current web server. Does so by either reading the app.config looking for a SchoolName attribute on the SeleniumWebHelper tag, Or by logging in as System admin, and fetching the top level Institution on the dashboard, if the site is single tenant. Please note that of the site is multi tenant, and no School Admin is specified in the app config, this will return null.
+            </summary>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <returns>the School name specified in app config, SchoolName attribute on the SeleniumWebHelper tag, or the first School in the institution dropdown for the specified District on the web server</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GetDistrictNameFromUI(OpenQA.Selenium.IWebDriver,System.Boolean)">
+            <summary>
+            returns the District name from the institution dropdown from the user search on the user management Page, fill not work of the browser is not on the user management page
+            </summary>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="IsMultiTenant">boolean indicating whether the server is configured as multi tenant or not</param>
+            <returns>the name of the top level institution for single tenant installations, or the first district lised for multi tenant installations</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GetInnerHTML(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the InnerHTML of a given element. tells browser to run some javascript client side. will fail if page has changed since element was fetched for the DOM.
+            </summary>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="element">a Selenium Web Element, taken from the currently loaded page</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.SetInnerHTML(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            Sets the InnerHTML of a given element. tells browser to run some javascript, and change the DOM of the currently loaded page, client side. will fail if page has changed since element was fetched for the DOM.
+            </summary>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="element">a Selenium Web Element, taken from the currently loaded page</param>
+            <param name="value">text/markup to be put in the element</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.SetAttribute(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.IWebElement,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Sets the value of an attribute on a given element
+            </summary>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="element">a Selenium Web Element, taken from the currently loaded page</param>
+            <param name="attributeName">name of the attribute within the element whose value you want to change</param>
+            <param name="attributeValue">the new value for the attribute</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.WaitForElements(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.Int32)">
+            <summary>
+            returns a collection of elements found by the provided css selector, that are either currently present in the browser's DOM, or will be within the span of the wait time, due to a postback, or ajax, etc.
+            </summary>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="CssSelector">a string representing a CSS selector</param>
+            <param name="waitTimeInSecs">number of milliseconds to wait</param>
+            <returns>the found collection (can be empty)</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.ClickOptionByText(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Boolean,OpenQA.Selenium.By)">
+            <summary>
+            click a choice within a dropdown, based on the partial ID of the dropdown/select element, and the text of the choice/option
+            </summary>
+            <param name="driver">a Selenium Web Driver instance, effectively the web browser</param>
+            <param name="selectIdEndsWith">the partial ID of the dropdown/select element</param>
+            <param name="optionText">the text of the choice/option</param>
+            <param name="withWait">optional, used to handle cases where the dropdown is not yet loaded into the DOM, i.e, the secondary institution list in the institution selector</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.ClickUntil(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,OpenQA.Selenium.By,System.Int32,System.Int32)">
+            <summary>
+            Clicks the element found using the thingToClickSelector over and over, until the element found through thingToWaitForSelector appears. used to get around timing issues associated with controls that appear, before they are ready to be interacted with.
+            </summary>
+            <param name="driver">Web driver instance</param>
+            <param name="thingToClickSelector">a selector for the thing to click</param>
+            <param name="thingToWaitForSelector">a selector for the thing to wait to show up after the click</param>
+            <param name="untilTimeoutSecs">seconds to wait until</param>
+            <param name="sleepBetweenClicksMillis">milisecond between each click try</param>
+            <returns>THe web element being waited for</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.ClickOptionByIndex(OpenQA.Selenium.IWebDriver,System.String,System.Int32,System.Boolean,OpenQA.Selenium.By)">
+            <summary>
+            finds, and click the dropdown selecton
+            </summary>
+            <param name="driver">Web driver instance</param>
+            <param name="selectIdEndsWith">partial id of the select element</param>
+            <param name="optionIndex">the 0 based index of the option to click</param>
+            <param name="withWait">indicates whether to wait until the select list appears</param>
+            <returns>the option element that was clicked</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GetWebDriver(System.Boolean,System.Func{OpenQA.Selenium.IWebDriver})">
+            <summary>
+            gets a Selenium Web Driver instance, effectively the web browser, initialized using the default Web Driver Type, and Starting URL, as defined in app.config
+            </summary>
+            <param name="isSingleTenant">indicates whether you want a single tenant or multi tenant web server to run your test on, default is multi tenant</param>
+            <returns>Selenium Web Driver instance, effectively the web browser</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GetRawWebDriver(Schoolnet.SeleniumHelperShared.WebHelperConfigSection.WebDriverTypes)">
+            <summary>
+            gets a Selenium Web Driver instance, effectively the web browser, initialized using the provided Web Driver Type
+            </summary>
+            <param name="driverType">enum of the supported browsers, currently Firefox is the preferred browser</param>
+            <returns>Selenium Web Driver instance, effectively the web browser</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.LoginAsAdmin(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            log into schoolnet, using admin username and password from app.config
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <returns>success or failure to log in, browser will be left at the user's home page</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.IsLoggedIn(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            indicates whether the current user is logged in 
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <returns>whether the current user is logged in</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.IsLoggedInAs(OpenQA.Selenium.IWebDriver,System.String)">
+            <summary>
+            check to see if the current logged in username matches the provided one
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <param name="userName">user name to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GetSignOutLink(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            get's the 'sign out' hyperlink, if present on the current page
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <returns>the 'sign out' hyperlink</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.Logout(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            click the logout link, and verifies that we have successfully logged out of the system
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <returns>indicates whther we successfully logged out</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.AppendLoginUrlSuffix(System.String)">
+            <summary>
+            returns the provided url, with the authentication.aspx page reference added, as well as the mode=login query string parameter
+            </summary>
+            <param name="cleanUrl"></param>
+            <returns>url with authentication suffix added</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.LoginWithoutVerify(OpenQA.Selenium.IWebDriver,System.String,System.String,System.String,System.String,Schoolnet.SeleniumWebHelper.UserTypes)">
+            <summary>
+            logs into the system with the provided username, password, optionally within the provided tenant and district
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <param name="userName">username credential</param>
+            <param name="password">password credential</param>
+            <param name="tenantName">optional tenant name</param>
+            <param name="districtName">optional district name</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.Login(OpenQA.Selenium.IWebDriver,System.String,System.String,System.String,System.String,Schoolnet.SeleniumWebHelper.UserTypes)">
+            <summary>
+            log into schoolnet, using provided username and password
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <param name="userName">provided Username</param>
+            <param name="password">provided password</param>
+            <returns>success or failure to log in, browser will be left at the user's home page</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.ValidateText(OpenQA.Selenium.IWebDriver,System.String,OpenQA.Selenium.By,System.String)">
+            <summary>
+            validates expected text against the text found in a element, if expected text is null, found text is not validated.
+            </summary>
+            <param name="driver">selemium web driver</param>
+            <param name="expectedValue">expected text, can be null or empty</param>
+            <param name="elementContainingActualText">selector for the element that has the text</param>
+            <returns>actual text from DOM</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.IsPasswordChanged(OpenQA.Selenium.IWebDriver,Schoolnet.SeleniumDTOs.SchoolnetUser,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="driver">IWebdriver</param>
+            <param name="user">Schoolnet user</param>
+            <param name="email">Email to update</param>
+            <returns>True if password has changed</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GetPrimaryMenuItems(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Gets the Schoolnet Primary level menu items
+            </summary>
+            <param name="driver"></param>
+            <returns>All menu items in a list</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GoToUrlWithLoadTime(OpenQA.Selenium.IWebDriver,System.String,System.String)">
+            <summary>
+            Navigates to the given URL and will return the time it takes for the page to load.
+            If the load time is longer than 8 seconds it is logged to the output, debugger window.
+            </summary>
+            <param name="driver"></param>
+            <param name="url">Url To navigate to. Uses the driver to get the base url and appends the url to it.</param>
+            <returns>TimeSpan of how long the page took to load.</returns>
+            <example>url = "../Assess/ProfileHome.aspx"</example>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GotoUrlAndVerify(OpenQA.Selenium.IWebDriver,System.String,System.String,OpenQA.Selenium.By)">
+            <summary>
+            navigates to the provided url within the target web server, then validates the page title contents against the provided text
+            </summary>
+            <param name="driver">WebDriver Instance</param>
+            <param name="urlFragment">url where the browser will navigate</param>
+            <param name="headerTitle">text that the header title should contain</param>
+            <returns>a boolean indicating that the title text has been matched</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GotoUrlAndVerify(OpenQA.Selenium.IWebDriver,System.String,System.Func{OpenQA.Selenium.IWebElement,System.Boolean},System.Func{OpenQA.Selenium.IWebDriver,System.String})">
+            <summary>
+            navigates to the provided url within the target web server, then validates the page title contents against the provided text
+            </summary>
+            <param name="driver">WebDriver Instance</param>
+            <param name="urlFragment">url where the browser will navigate</param>
+            <param name="verifyHeaderFunc">a function delegate wich will be called with the Title web element, and will return a boolean indicating the success or failure of the validation function</param>
+            <param name="loginFunc">a delegate to a function wich will get called before navigating to the provided url. Used to login as a specific user in the even that login is required</param>
+            <returns>a boolean indicating that the title text has been matched</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GotoUrl(OpenQA.Selenium.IWebDriver,System.String,System.Func{OpenQA.Selenium.IWebDriver,System.String})">
+            <summary>
+            call the provided login function, then Navigate to the provided Url
+            </summary>
+            <param name="driver">WebDriver Instance</param>
+            <param name="urlFragment">url to navigate to</param>
+            <param name="loginFunc">login function to call</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GotoUrlAndVerify(OpenQA.Selenium.IWebDriver,System.String,System.String,System.Func{OpenQA.Selenium.IWebDriver,System.String},OpenQA.Selenium.By)">
+            <summary>
+            navigates to the provided url within the target web server, then validates the page title contents against the provided text
+            </summary>
+            <param name="driver">WebDriver Instance</param>
+            <param name="urlFragment">url where the browser will navigate</param>
+            <param name="headerTitle">text that the header title should contain</param>
+            <param name="loginFunc">a delegate to a function wich will get called before navigating to the provided url. Used to login as a specific user in the even that login is required</param>
+            <returns>a boolean indicating that the title text has been matched</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.VerifyPageTitle(OpenQA.Selenium.IWebDriver,System.String,OpenQA.Selenium.By)">
+            <summary>
+            Waits for the appearance of the page title, then validates that its contents contains the provided text
+            </summary>
+            <param name="driver">Web Driver Instance</param>
+            <param name="headerTitle">partial or complete page title text to match</param>
+            <param name="titleSelectorBy">optional parm that overrides the By element used to locate the page title</param>
+            <returns>a boolean indicating that a match was found</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.VerifySectionHeader(OpenQA.Selenium.IWebDriver,System.String,OpenQA.Selenium.By)">
+            <summary>
+            Waits for the appearance of the section title, then validates that its contents contains the provided text
+            </summary>
+            <param name="driver">Web Driver Instance</param>
+            <param name="sectionHeaderTitle">partial or complete page title text to match</param>
+            <param name="SectionHeaderSelector">optional parm that overrides the By element used to locate the page title</param>
+            <returns>a boolean indicating that a match was found</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.VerifyPageTitle(OpenQA.Selenium.IWebDriver,System.Func{OpenQA.Selenium.IWebElement,System.Boolean},OpenQA.Selenium.By)">
+            <summary>
+            Waits for the appearance of the page title, then returns the output of the validation function call
+            </summary>
+            <param name="driver">Web Driver Instance</param>
+            <param name="verifyHeaderFunc">a function delegate wich will be called with the Title web element, and will return a boolean indicating the success or failure of the validation function</param>
+            <param name="titleSelectorBy">optional parm that overrides the By element used to locate the page title</param>
+            <returns>a boolan, which is the result of the call to the function delegate</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GetPageError(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)">
+            <summary>
+            If the current page is an exception page, the function returns text containing the exception message, and the stack trace
+            </summary>
+            <param name="driver">Web Driver Instance</param>
+            <param name="titleSelector">optional parm that overrides the By element used to locate the page title</param>
+            <returns>text containing the exception message, and the stack trace</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GoToUserManagement(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Navigates the browser to the user management screen
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <returns>success or failure to arrive at the user management screen</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.FindByRoleInstitution(OpenQA.Selenium.IWebDriver,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Finds a user who's institution and role match the provided ones
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <param name="roleName">role to search for</param>
+            <param name="institutionName">name of instituition to search for</param>
+            <param name="subInstitutionName">optional sub institution name</param>
+            <param name="searchChildren">indicates whether to search within sub institutions of provided institution, to be used for regional and district searches</param>
+            <returns>indicates whether one or more users was found</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.HideTopNavigation(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Hides the drop down navigation menus, in the event that they are visible, due to mouse position. call this, if the elements that you are trying to click are obscured
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.FindCheckboxRadioButtonByText(OpenQA.Selenium.IWebDriver,System.String)">
+            <summary>
+            Find a checkbox or radio button with a given text
+            </summary>
+            <param name="driver">webdriver</param>
+            <param name="text">label text for checkbox or radio button</param>
+            <returns>a web element</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.FindCheckboxRadioButtonByPartialText(OpenQA.Selenium.IWebDriver,System.String)">
+            <summary>
+            Find a checkbox or radio button with a given text
+            </summary>
+            <param name="driver">webdriver</param>
+            <param name="partialText">partial label text for checkbox or radio button</param>
+            <returns>a web element</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.FindByFirstNameLastNameInstitution(OpenQA.Selenium.IWebDriver,System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            returns a boolean, indicating that a user with the provided first name, last name and institution is present.
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <param name="firstName">first name to search for</param>
+            <param name="lastName">last name to search for</param>
+            <param name="institutionName">institution to search for</param>
+            <param name="subInstitutionName">optional sub institution</param>
+            <param name="searchChildren">bool to indicate whether to search in sub institutions</param>
+            <returns></returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.FindUserByUsernameInstitution(OpenQA.Selenium.IWebDriver,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            searches for a user by username using the user search on the user management screen, search is across all institutions and roles. 
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <param name="username">username to search for</param>
+            <returns>success or failure to find the user, browser is left at the search results screen</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GoToUserDetail(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            click the first occurence of the "view Profile" link on the search results page.
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GoToEditUser(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            click the first occurence of the - EditUser link on the search results page.
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GetAllRolesWithOperations(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Return all the Roles with its associated operations.
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <returns>a dictionary, containing all operation(value) for each role (key)</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GetRolesForOperation(OpenQA.Selenium.IWebDriver,System.String)">
+            <summary>
+            Get the Roles which contains all the given n Operations
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <param name="forOperations">operations that the returned roles have associated</param>
+            <returns></returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GetAllRolesWithDescriptions(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Return all the Roles with its associated descriptions.
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <returns>dictionary, with key being the rolename, and value being the role description </returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GetRolesForOperationExcludingSystemOperator(OpenQA.Selenium.IWebDriver,System.String)">
+            <summary>
+            Return List of Roles after excluding "System Operator"
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <param name="forOperation">a list of operations which the returned roles have</param>
+            <returns></returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.HasRole(OpenQA.Selenium.IWebDriver,System.String,System.String,System.String,System.String)">
+            <summary>
+            indicates whether the provided user has the role in the given institution/subinstitution
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <param name="UserName">User to check</param>
+            <param name="Institution">parent institution name for the sub institution</param>
+            <param name="SubInstitution">institution to check</param>
+            <param name="Role">role to check</param>
+            <returns>whether the provided user has the role in the given institution/subinstitution</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.GetAllOperationsWithLegend(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Return all the operations with legend as key.
+            </summary>
+            <param name="driver">Selenium Web Driver instance, effectively the web browser</param>
+            <returns>Dictionary where key is the legend, and the value is a list of operation name and description key value pairs</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.FindMissingLinks(OpenQA.Selenium.IWebDriver,System.Collections.Generic.List{System.String})">
+            <summary>
+            Get all the Links from the page and verify the expected links are there in that. 
+            If all are not found Return the missing hyperlink list. 
+            If all are found, just return the empty list.
+            </summary>
+            <param name="driver">Web Driver</param>
+            <param name="linkTextsToFind">List of Links to be searched</param>
+            <returns>Missing Link List</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.FindMissingButtonsByText(OpenQA.Selenium.IWebDriver,System.Collections.Generic.List{System.String})">
+            <summary>
+            Get all the Buttons(by text) from the page and verify the expected buttons are there in that. 
+            If all are not found Return the missing buttons list. 
+            If all are found, just return the empty list.
+            </summary>
+            <param name="driver">Web Driver</param>
+            <param name="linkTextsToFind">List of Links to be searched</param>
+            <returns>Missing Buttons List</returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.ClickTabAndVerifyItsActive(OpenQA.Selenium.IWebDriver,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Click the tab and verifies that it is now active on the screen
+            </summary>
+            <param name="driver">the driver to use</param>
+            <param name="tabClass">the tab's container table class</param>
+            <param name="tabText">The text on the tab</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.VerifyTabIsActive(OpenQA.Selenium.IWebDriver,System.String,System.String)">
+            <summary>
+            Verifies that the tab on the screen is currently selected
+            </summary>
+            <param name="driver">the driver to use</param>
+            <param name="tabClass">the tab's container table class</param>
+            <param name="tabText">The text on the tab</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.ClickTab(OpenQA.Selenium.IWebDriver,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Clicks the tab with in the given tab table using the tab text.
+            </summary>
+            <param name="driver">the driver to use</param>
+            <param name="tabClass">the tab's container table class</param>
+            <param name="tabText">The text on the tab</param>
+            <param name="title">the title of the page to checkafter clicking the tab </param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.SetValueToDateTextBox(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.DateTime)">
+            <summary>
+            Can be used to set the date in a date input box if the sendkeys works in that input box.
+            </summary>
+            <param name="driver"></param>
+            <param name="textBoxSelector"></param>
+            <param name="dateTime"></param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.SetConfiguration(OpenQA.Selenium.IWebDriver,System.String,System.String,System.String@)">
+            <summary>
+            Used to Set the System > General Settings > Config > Module > Configuration
+            Assumes that we are logges in as the Sys_Setup user and we are on the Set the System > General Settings > Config > Module page.
+            </summary>
+            <param name="driver">WebDriver Instance</param>
+            <param name="configurationSpanText">Configuration name</param>
+            <param name="valueToSet">bool value to set for the Configuration</param>
+            <param name="originalSettingValue">Output Variable to store the original value of the configuration setting, so that it can be restored back during class cleanup</param>
+            <returns></returns>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.FillInTextBox(OpenQA.Selenium.IWebDriver,System.String,System.String,OpenQA.Selenium.By)">
+            <summary>
+            Used to find a textbox and fill it with the passed in text. 
+            If we do not have the Id for the selector, we can pass in the custom selector By to this method (in that case specify textBoxSelectorIdEndsWith as null)
+            </summary>
+            <param name="driver"></param>
+            <param name="textToFill">Text to fill in the textbox concerned</param>
+            <param name="textBoxSelectorIdEndsWith">Text Box selector ID ends with (will be null in case no id is present)</param>
+            <param name="textBoxSelectorByInCaseIdNotAvailable">Default value is null. Can pass in the text box selector By in case ID is not available</param>
+        </member>
+        <member name="M:Schoolnet.SeleniumWebHelper.WebHelper.SetValueToDateTextBoxUsingDatePicker(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,OpenQA.Selenium.By)">
+            <summary>
+            Used to select the date for a Date Input box via the date picker. A Random weekday is selected from the default month displayed on the date picker.
+            </summary>
+            <param name="driver"></param>
+            <param name="textBoxSelectorBy"></param>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WebHelper.DefaultTenantName">
+            <summary>
+            The Default Name of the Tenant stored in the app.config
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WebHelper.DistrictAdminUserName">
+            <summary>
+            the district level admin username you have stored in the app.config. Used for creating/editing district level users
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WebHelper.SystemSetupUserName">
+            <summary>
+            the sys setup username you have stored in the app.config. Used for the system config
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WebHelper.AdminUsername">
+            <summary>
+            the Admin username you have stored in the app.config. used to login as admin
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WebHelper.AdminPassword">
+            <summary>
+            the Admin password you have stored in the app.config. used to login as admin
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WebHelper.WebDriverType">
+            <summary>
+            type of web browser that will be used when tests are run, stored in the app.config. 
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WebHelper.StartingUrlSingleTenant">
+            <summary>
+            Url which will be loaded initially by the browser, stored in the app.config
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WebHelper.MultiTenantDistrictName">
+            <summary>
+            district name in multiple tenant sites stored in app.config       
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WebHelper.StartingUrlMultiTenant">
+            <summary>
+            Url which will be loaded initially by the browser, stored in the app.config
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WebHelper.FileDownloadDirectory">
+            <summary>
+            Path stored in app.config where the downloaded files will be available
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WebHelper.InternetExplorerDriverServerDirectory">
+            <summary>
+            IEDriver.exe Directory
+            </summary>
+        </member>
+        <member name="P:Schoolnet.SeleniumWebHelper.WebHelper.ChromeDriverServerDirectory">
+            <summary>
+            ChromeDriver.exe Directory
+            </summary>
+        </member>
+    </members>
+</doc>
