@@ -17,6 +17,15 @@ public class UnitTest1
         Assert.AreEqual(30, result);
     }
 
+    [Test]
+    public void AddTestnew()
+    {
+        //MathsHelper helper = new MathsHelper();
+        int result = 20 + 10;
+        System.Console.WriteLine("done1");
+        Assert.AreEqual(30, result);
+    }
+
 
     [Test]
     public void SubtractTest()
@@ -35,4 +44,6 @@ public class UnitTest1
         System.Console.WriteLine("done2");
         Assert.AreEqual(10, result);
     }
+
+
 }
