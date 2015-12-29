@@ -26,4 +26,13 @@ public class UnitTest1
         System.Console.WriteLine("done2");
         Assert.AreEqual(10, result);
     }
+
+    [Test]
+    public void SubtractTestnew()
+    {
+        //MathsHelper helper = new MathsHelper();
+        int result = 20 - 10;
+        System.Console.WriteLine("done2");
+        Assert.AreEqual(10, result);
+    }
 }
