@@ -4,8 +4,9 @@
     <StartAction>Program</StartAction>
     <StartProgram>C:\Program Files %28x86%29\NUnit 2.6.4\bin\nunit.exe</StartProgram>
     <StartArguments>SampleAddition.dll /run</StartArguments>
-    <StartWorkingDirectory>C:\Users\saranya.subramani\Documents\Visual Studio 2012\Projects\SampleAddition\SampleAddition\bin\Debug\</StartWorkingDirectory>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <StartWorkingDirectory>C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\</StartWorkingDirectory>
+    <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <StartAction>Program</StartAction>

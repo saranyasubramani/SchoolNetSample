@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\saranya.subramani\Documents\Visual Studio 2012\Projects\SampleAddition\SampleAddition\bin\Debug\SampleAddition.dll" total="3" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-12-23" time="15:53:43">
-  <environment nunit-version="2.6.4.14350" clr-version="4.0.30319.18063" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\saranya.subramani\Documents\Visual Studio 2012\Projects\SampleAddition\SampleAddition\bin\Debug" machine-name="ASPIRE588" user="saranya.subramani" user-domain="ASPIRESYS" />
+<test-results name="C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\SampleAddition.dll" total="4" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-12-29" time="11:56:42">
+  <environment nunit-version="2.6.4.14350" clr-version="4.0.30319.18063" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug" machine-name="ASPIRE588" user="saranya.subramani" user-domain="ASPIRESYS" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Users\saranya.subramani\Documents\Visual Studio 2012\Projects\SampleAddition\SampleAddition\bin\Debug\SampleAddition.dll" executed="True" result="Success" success="True" time="116.513" asserts="0">
+  <test-suite type="Assembly" name="C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\SampleAddition.dll" executed="True" result="Success" success="True" time="94.588" asserts="0">
     <results>
-      <test-suite type="Namespace" name="SeleniumUITests" executed="True" result="Success" success="True" time="109.845" asserts="0">
+      <test-suite type="Namespace" name="SeleniumUITests" executed="True" result="Success" success="True" time="94.508" asserts="0">
         <results>
-          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="109.845" asserts="0">
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="94.508" asserts="0">
             <results>
-              <test-suite type="Namespace" name="Library" executed="True" result="Success" success="True" time="109.845" asserts="0">
+              <test-suite type="Namespace" name="Library" executed="True" result="Success" success="True" time="94.508" asserts="0">
                 <results>
-                  <test-suite type="Namespace" name="UI" executed="True" result="Success" success="True" time="109.845" asserts="0">
+                  <test-suite type="Namespace" name="UI" executed="True" result="Success" success="True" time="94.507" asserts="0">
                     <results>
-                      <test-suite type="Namespace" name="Assess" executed="True" result="Success" success="True" time="109.845" asserts="0">
+                      <test-suite type="Namespace" name="Assess" executed="True" result="Success" success="True" time="94.507" asserts="0">
                         <results>
-                          <test-suite type="TestFixture" name="CreateNewItemTests" executed="True" result="Success" success="True" time="109.843" asserts="0">
+                          <test-suite type="TestFixture" name="CreateNewItemTests" executed="True" result="Success" success="True" time="94.505" asserts="0">
                             <results>
-                              <test-case name="SeleniumUITests.Tests.Library.UI.Assess.CreateNewItemTests.Create_A_Matching_Item_From_The_Create_New_Item_Page_ST" executed="True" result="Success" success="True" time="109.827" asserts="4" />
+                              <test-case name="SeleniumUITests.Tests.Library.UI.Assess.CreateNewItemTests.Create_A_Matching_Item_From_The_Create_New_Item_Page_ST" executed="True" result="Success" success="True" time="94.486" asserts="4" />
                             </results>
                           </test-suite>
                         </results>
@@ -30,10 +30,11 @@
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="UnitTest1" executed="True" result="Success" success="True" time="6.642" asserts="0">
+      <test-suite type="TestFixture" name="UnitTest1" executed="True" result="Success" success="True" time="0.023" asserts="0">
         <results>
-          <test-case name="UnitTest1.AddTest" executed="True" result="Success" success="True" time="6.638" asserts="1" />
-          <test-case name="UnitTest1.SubtractTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+          <test-case name="UnitTest1.AddTest" executed="True" result="Success" success="True" time="0.018" asserts="1" />
+          <test-case name="UnitTest1.SubtractTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+          <test-case name="UnitTest1.SubtractTestnew" executed="True" result="Success" success="True" time="0.000" asserts="1" />
         </results>
       </test-suite>
     </results>

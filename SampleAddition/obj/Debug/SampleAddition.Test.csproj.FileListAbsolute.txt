@@ -21,3 +21,18 @@ c:\users\saranya.subramani\documents\visual studio 2012\Projects\SampleAddition\
 c:\users\saranya.subramani\documents\visual studio 2012\Projects\SampleAddition\SampleAddition\bin\Debug\WebDriver.xml
 c:\users\saranya.subramani\documents\visual studio 2012\Projects\SampleAddition\SampleAddition\bin\Debug\WebDriver.Support.pdb
 c:\users\saranya.subramani\documents\visual studio 2012\Projects\SampleAddition\SampleAddition\bin\Debug\WebDriver.Support.xml
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\SampleAddition.dll.config
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\SampleAddition.dll
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\SampleAddition.pdb
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\GitSharp.Core.dll
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\GitSharp.dll
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\nunit.framework.dll
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\nunit.mocks.dll
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\pnunit.framework.dll
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\Tamir.SharpSSH.dll
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\Winterdom.IO.FileMap.dll
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\nunit.framework.xml
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\obj\Debug\SampleAddition.dll
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\obj\Debug\SampleAddition.pdb
+C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\obj\Debug\SampleAddition.Test.csprojResolveAssemblyReference.cache

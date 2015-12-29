@@ -85,6 +85,7 @@ using OpenQA.Selenium.Support.UI;
             {
                 case "Chrome":
                     Debug.WriteLine("ChromeDriver: " + ChromeDriverServerDirectory);
+                    
                     DesiredCapabilities capabillities = new DesiredCapabilities();
                     capabillities.SetCapability(CapabilityType.BrowserName, "chrome");
                     capabillities.SetCapability(CapabilityType.Version, "45");
@@ -94,7 +95,7 @@ using OpenQA.Selenium.Support.UI;
                     capabillities.SetCapability("username", "saran1990");
                     capabillities.SetCapability("accessKey", "1661b2da-82dd-466c-be0d-397d4f65497d");
                     //driver = new RemoteWebDriver(new Uri("http://ondemand.saucelabs.com:80/wd/hub"), capabillities, TimeSpan.FromSeconds(600));
-                   driver = new ChromeDriver(ChromeDriverServerDirectory);
+                    driver = new ChromeDriver(ChromeDriverServerDirectory);
                    break;
 
                 case "Firefox":
@@ -184,7 +185,7 @@ using OpenQA.Selenium.Support.UI;
         }
 
         public static string InternetExplorerDriverServerDirectory { get { return "C:\\IEDriver\\"; } }
-        public static string ChromeDriverServerDirectory { get { return "C:\\chromedriver\\"; } }
+        public static string ChromeDriverServerDirectory { get { return "\\chromedriver\\"; } }
         public static double ImplicitTimeOut { get { return Double.Parse("15"); } }
 
         /// <summary>
