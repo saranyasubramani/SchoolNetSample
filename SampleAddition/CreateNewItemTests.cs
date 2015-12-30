@@ -51,6 +51,7 @@ namespace SeleniumUITests.Tests.Library.UI.Assess
         /// SingleTenant
         /// </remarks>
         [Test]
+        [Category("Sequential")]
         public void Create_A_Matching_Item_From_The_Create_New_Item_Page_ST()
         {
             Create_A_Matching_Item_From_The_Create_New_Item_Page();
