@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 public class UnitTest1
 {
     [Test]
+    [Category("SequentialNew")]
     public void AddTest()
     {
         //MathsHelper helper = new MathsHelper();
