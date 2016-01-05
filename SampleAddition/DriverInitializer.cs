@@ -107,7 +107,8 @@ using OpenQA.Selenium.Support.UI;
                     capabillities.SetCapability("username", "saran1990");
                     capabillities.SetCapability("accessKey", "1661b2da-82dd-466c-be0d-397d4f65497d");*/
                     //driver = new RemoteWebDriver(new Uri("http://ondemand.saucelabs.com:80/wd/hub"), capabillities, TimeSpan.FromSeconds(600));
-                    driver = new ChromeDriver(ChromeDriverServerDirectory);
+                    driver = new RemoteWebDriver(new Uri("http://"+Environment.GetEnvironmentVariable("SAUCE_USERNAME")+":"+Environment.GetEnvironmentVariable("SAUCE_ACCESS_KEY")+"@ondemand.saucelabs.com:80/wd/hub"),capabillities);
+                    //driver = new ChromeDriver(ChromeDriverServerDirectory);
                    break;
 
                 case "Firefox":
