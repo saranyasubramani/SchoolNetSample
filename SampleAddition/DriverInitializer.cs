@@ -23,7 +23,9 @@ using OpenQA.Selenium.Support.UI;
 
         public static IWebDriver InvokeWebDriver()
         {
-            Func<IWebDriver> getRawWebDriverFunc = () => GetRawWebDriver("Chrome");
+
+
+            Func<IWebDriver> getRawWebDriverFunc = () => GetRawWebDriver(Environment.GetEnvironmentVariable("SELENIUM_BROWSER"));
             string startingUrl = null;
             startingUrl = StartingUrlSingleTenant;
             IWebDriver webDriver = getRawWebDriverFunc();
@@ -81,19 +83,29 @@ using OpenQA.Selenium.Support.UI;
             //TODO: more refactoring is needed for the drivers...
             IWebDriver driver = null;
 
+            
+
             switch (driverType)
             {
-                case "Chrome":
+                case "chrome":
                     Debug.WriteLine("ChromeDriver: " + ChromeDriverServerDirectory);
                     
                     DesiredCapabilities capabillities = new DesiredCapabilities();
-                    capabillities.SetCapability(CapabilityType.BrowserName, "chrome");
+
+                    capabillities.SetCapability(CapabilityType.BrowserName,Environment.GetEnvironmentVariable("SELENIUM_BROWSER"));
+                    capabillities.SetCapability(CapabilityType.BrowserName,Environment.GetEnvironmentVariable("SELENIUM_VERSION"));
+                    capabillities.SetCapability(CapabilityType.Platform, Environment.GetEnvironmentVariable("SELENIUM_PLATFORM"));
+                    
+
+
+                   /* capabillities.SetCapability(CapabilityType.BrowserName, "chrome");
                     capabillities.SetCapability(CapabilityType.Version, "45");
                     capabillities.SetCapability(CapabilityType.Platform, "Windows 7");
                     capabillities.SetCapability("deviceName", "");
                     capabillities.SetCapability("deviceOrientation", "");
+
                     capabillities.SetCapability("username", "saran1990");
-                    capabillities.SetCapability("accessKey", "1661b2da-82dd-466c-be0d-397d4f65497d");
+                    capabillities.SetCapability("accessKey", "1661b2da-82dd-466c-be0d-397d4f65497d");*/
                     //driver = new RemoteWebDriver(new Uri("http://ondemand.saucelabs.com:80/wd/hub"), capabillities, TimeSpan.FromSeconds(600));
                     driver = new ChromeDriver(ChromeDriverServerDirectory);
                    break;
