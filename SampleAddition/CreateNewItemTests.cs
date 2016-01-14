@@ -65,6 +65,7 @@ namespace SeleniumUITests.Tests.Library.UI.Assess
         public void Create_A_Matching_Item_From_The_Create_New_Item_Page()
         {
             //GIVEN the user logs into the application
+            Console.WriteLine("Started Test");
             IWebDriver driver = DriverInitializer.InvokeWebDriver();
             try
             {

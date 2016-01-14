@@ -102,12 +102,12 @@ using OpenQA.Selenium.Support.UI;
                     capabillities.SetCapability(CapabilityType.Version, "45");
                     capabillities.SetCapability(CapabilityType.Platform, "Windows 7");
                     capabillities.SetCapability("deviceName", "");
-                    capabillities.SetCapability("deviceOrientation", "");
+                    capabillities.SetCapability("deviceOrientation", "");*/
 
-                    capabillities.SetCapability("username", "saran1990");
-                    capabillities.SetCapability("accessKey", "1661b2da-82dd-466c-be0d-397d4f65497d");*/
-                    //driver = new RemoteWebDriver(new Uri("http://ondemand.saucelabs.com:80/wd/hub"), capabillities, TimeSpan.FromSeconds(600));
-                    driver = new RemoteWebDriver(new Uri("http://"+Environment.GetEnvironmentVariable("SAUCE_USERNAME")+":"+Environment.GetEnvironmentVariable("SAUCE_ACCESS_KEY")+"@ondemand.saucelabs.com:80/wd/hub"),capabillities);
+                    capabillities.SetCapability("username", Environment.GetEnvironmentVariable("SAUCE_USERNAME"));
+                    capabillities.SetCapability("accessKey", Environment.GetEnvironmentVariable("SAUCE_ACCESS_KEY"));
+                    driver = new RemoteWebDriver(new Uri("http://ondemand.saucelabs.com:80/wd/hub"), capabillities, TimeSpan.FromSeconds(600));
+                    //driver = new RemoteWebDriver(new Uri("http://"+Environment.GetEnvironmentVariable("SAUCE_USERNAME")+":"+Environment.GetEnvironmentVariable("SAUCE_ACCESS_KEY")+"@ondemand.saucelabs.com:80/wd/hub"),capabillities);
                     //driver = new ChromeDriver(ChromeDriverServerDirectory);
                    break;
 
