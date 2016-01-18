@@ -74,13 +74,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="nunit-console-runner">
+      <HintPath>..\packages\Bud.NUnit.ConsoleRunner.0.0.1\lib\net40\nunit-console-runner.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.core">
-      <HintPath>..\packages\NUnitTestAdapter.WithFramework.2.0.0\lib\nunit.core.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\packages\Bud.NUnit.ConsoleRunner.0.0.1\lib\net40\nunit.core.dll</HintPath>
     </Reference>
     <Reference Include="nunit.core.interfaces">
-      <HintPath>..\packages\NUnitTestAdapter.WithFramework.2.0.0\lib\nunit.core.interfaces.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\packages\Bud.NUnit.ConsoleRunner.0.0.1\lib\net40\nunit.core.interfaces.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework, Version=3.0.5813.39031, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -91,8 +92,7 @@
       <HintPath>..\..\..\..\..\Downloads\nunitdlls\NUnit-2.6.4\bin\framework\nunit.mocks.dll</HintPath>
     </Reference>
     <Reference Include="nunit.util">
-      <HintPath>..\packages\NUnitTestAdapter.WithFramework.2.0.0\lib\nunit.util.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\packages\Bud.NUnit.ConsoleRunner.0.0.1\lib\net40\nunit.util.dll</HintPath>
     </Reference>
     <Reference Include="NUnit.VisualStudio.TestAdapter">
       <HintPath>..\packages\NUnitTestAdapter.WithFramework.2.0.0\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
