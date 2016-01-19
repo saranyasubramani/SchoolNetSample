@@ -24,7 +24,7 @@ using OpenQA.Selenium.Support.UI;
         public static IWebDriver InvokeWebDriver()
         {
 
-            Console.WriteLine("Browser:" + Environment.GetEnvironmentVariables());
+            //Console.WriteLine("Browser:" + Environment.GetEnvironmentVariables());
             foreach (System.Collections.DictionaryEntry env in Environment.GetEnvironmentVariables())
             {
                 string name = (string)env.Key;
