@@ -91,10 +91,10 @@ using OpenQA.Selenium.Support.UI;
 
             
 
-            switch (driverType)
-            {
-                case "chrome":
-                    Debug.WriteLine("ChromeDriver: " + ChromeDriverServerDirectory);
+            //switch (driverType)
+            //{
+            //    case "chrome":
+                    //Debug.WriteLine("ChromeDriver: " + ChromeDriverServerDirectory);
                     
                     DesiredCapabilities capabillities = new DesiredCapabilities();
                     Console.WriteLine("Version:" + Environment.GetEnvironmentVariable("selenium_version"));
@@ -118,47 +118,47 @@ using OpenQA.Selenium.Support.UI;
                     driver = new RemoteWebDriver(new Uri("http://ondemand.saucelabs.com/wd/hub"), capabillities, TimeSpan.FromSeconds(600));
                     //driver = new RemoteWebDriver(new Uri("http://"+Environment.GetEnvironmentVariable("SAUCE_USERNAME")+":"+Environment.GetEnvironmentVariable("SAUCE_ACCESS_KEY")+"@ondemand.saucelabs.com:80/wd/hub"),capabillities);
                     //driver = new ChromeDriver(ChromeDriverServerDirectory);
-                   break;
+                //   break;
 
-                case "Firefox":
-                    driver = GetFirefoxInstance();
-                    break;
+                //case "Firefox":
+                //    driver = GetFirefoxInstance();
+                //    break;
 
-                case "FirefoxWithLocalProxy":
-                    FirefoxProfile profile = new FirefoxProfile();
-                    profile.SetPreference("network.proxy.http", "localhost");
-                    profile.SetPreference("network.proxy.http_port", "7080");
-                    profile.SetPreference("network.proxy.type", "1");
-                    break;
+                //case "FirefoxWithLocalProxy":
+                //    FirefoxProfile profile = new FirefoxProfile();
+                //    profile.SetPreference("network.proxy.http", "localhost");
+                //    profile.SetPreference("network.proxy.http_port", "7080");
+                //    profile.SetPreference("network.proxy.type", "1");
+                //    break;
 
-                case "InternetExplorer":
-                    Debug.WriteLine("InternetExplorerDriverServer: " + InternetExplorerDriverServerDirectory);
-                    DesiredCapabilities desiredCapabilities = DesiredCapabilities.InternetExplorer();
-                    var options = new InternetExplorerOptions();
-                    options.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
-                    driver = new InternetExplorerDriver(InternetExplorerDriverServerDirectory, options);
-                    break;
-
-
-                case "RemoteFirefox":
-                    capabillities = DesiredCapabilities.Firefox();
-                    /*
-                    capabillities.SetCapability("version", "5");
-                    capabillities.Platform = new Platform(PlatformType.XP);
-                    capabillities.SetCapability("name", "Testing Selenium 2 with C# on Sauce");
-                    capabillities.SetCapability("username", "dna64pie");
-                    capabillities.SetCapability("accessKey", "099c73db-929b-418c-bef6-d929381fa07f");
-                    driver = new RemoteWebDriver(new Uri("http://zipgun2:099c73db-929b-418c-bef6-d929381fa07f@ondemand.saucelabs.com:80/wd/hub"), capabillities);
-                    driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
-                    */
-                    driver = new RemoteWebDriver(capabillities);
-                    break;
+                //case "InternetExplorer":
+                //    Debug.WriteLine("InternetExplorerDriverServer: " + InternetExplorerDriverServerDirectory);
+                //    DesiredCapabilities desiredCapabilities = DesiredCapabilities.InternetExplorer();
+                //    var options = new InternetExplorerOptions();
+                //    options.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
+                //    driver = new InternetExplorerDriver(InternetExplorerDriverServerDirectory, options);
+                //    break;
 
 
-                default:
-                    driver = new FirefoxDriver();
-                    break;
-            }
+                //case "RemoteFirefox":
+                //    capabillities = DesiredCapabilities.Firefox();
+                //    /*
+                //    capabillities.SetCapability("version", "5");
+                //    capabillities.Platform = new Platform(PlatformType.XP);
+                //    capabillities.SetCapability("name", "Testing Selenium 2 with C# on Sauce");
+                //    capabillities.SetCapability("username", "dna64pie");
+                //    capabillities.SetCapability("accessKey", "099c73db-929b-418c-bef6-d929381fa07f");
+                //    driver = new RemoteWebDriver(new Uri("http://zipgun2:099c73db-929b-418c-bef6-d929381fa07f@ondemand.saucelabs.com:80/wd/hub"), capabillities);
+                //    driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
+                //    */
+                //    driver = new RemoteWebDriver(capabillities);
+                //    break;
+
+
+                //default:
+                //    driver = new FirefoxDriver();
+                //    break;
+            //}
             if (driver != null)
             {
                 driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(ImplicitTimeOut));
