@@ -24,8 +24,14 @@ using OpenQA.Selenium.Support.UI;
         public static IWebDriver InvokeWebDriver()
         {
 
-            Console.WriteLine("Browser:" + Environment.GetEnvironmentVariables().Keys.ToString());
-            Func<IWebDriver> getRawWebDriverFunc = () => GetRawWebDriver(Environment.GetEnvironmentVariable("${SELENIUM_BROWSER}"));
+            Console.WriteLine("Browser:" + Environment.GetEnvironmentVariables());
+            foreach (System.Collections.DictionaryEntry env in Environment.GetEnvironmentVariables())
+            {
+                string name = (string)env.Key;
+                string value = (string)env.Value;
+                Console.WriteLine("{0}={1}", name, value);
+            }
+            Func<IWebDriver> getRawWebDriverFunc = () => GetRawWebDriver(Environment.GetEnvironmentVariable("selenium_browser"));
             string startingUrl = null;
             startingUrl = StartingUrlSingleTenant;
             IWebDriver webDriver = getRawWebDriverFunc();
@@ -91,13 +97,13 @@ using OpenQA.Selenium.Support.UI;
                     Debug.WriteLine("ChromeDriver: " + ChromeDriverServerDirectory);
                     
                     DesiredCapabilities capabillities = new DesiredCapabilities();
-                    Console.WriteLine("Versiob:" + Environment.GetEnvironmentVariable("${SELENIUM_VERSION}"));
-                    Console.WriteLine("Platform:" + Environment.GetEnvironmentVariable("${SELENIUM_PLATFORM}"));
-                    Console.WriteLine("User:" + Environment.GetEnvironmentVariable("${SAUCE_USERNAME}"));
-                    Console.WriteLine("Key:" + Environment.GetEnvironmentVariable("${SAUCE_ACCESS_KEY}"));
-                    capabillities.SetCapability(CapabilityType.BrowserName,Environment.GetEnvironmentVariable("${SELENIUM_BROWSER}"));
-                    capabillities.SetCapability(CapabilityType.BrowserName,Environment.GetEnvironmentVariable("${SELENIUM_VERSION}"));
-                    capabillities.SetCapability(CapabilityType.Platform, Environment.GetEnvironmentVariable("${SELENIUM_PLATFORM}"));
+                    Console.WriteLine("Version:" + Environment.GetEnvironmentVariable("selenium_version"));
+                    Console.WriteLine("Platform:" + Environment.GetEnvironmentVariable("selenium_platform"));
+                    Console.WriteLine("User:" + Environment.GetEnvironmentVariable("sauce_username"));
+                    Console.WriteLine("Key:" + Environment.GetEnvironmentVariable("sauce_access_key"));
+                    capabillities.SetCapability(CapabilityType.BrowserName, Environment.GetEnvironmentVariable("selenium_browser"));
+                    capabillities.SetCapability(CapabilityType.Version, Environment.GetEnvironmentVariable("selenium_version"));
+                    capabillities.SetCapability(CapabilityType.Platform, Environment.GetEnvironmentVariable("selenium_platform"));
                     
 
 
@@ -107,9 +113,9 @@ using OpenQA.Selenium.Support.UI;
                     capabillities.SetCapability("deviceName", "");
                     capabillities.SetCapability("deviceOrientation", "");*/
 
-                    capabillities.SetCapability("username", Environment.GetEnvironmentVariable("${SAUCE_USERNAME}"));
-                    capabillities.SetCapability("accessKey", Environment.GetEnvironmentVariable("${SAUCE_ACCESS_KEY}"));
-                    driver = new RemoteWebDriver(new Uri("http://ondemand.saucelabs.com:80/wd/hub"), capabillities, TimeSpan.FromSeconds(600));
+                    capabillities.SetCapability("username", Environment.GetEnvironmentVariable("sauce_username"));
+                    capabillities.SetCapability("accessKey", Environment.GetEnvironmentVariable("sauce_access_key"));
+                    driver = new RemoteWebDriver(new Uri("http://ondemand.saucelabs.com/wd/hub"), capabillities, TimeSpan.FromSeconds(600));
                     //driver = new RemoteWebDriver(new Uri("http://"+Environment.GetEnvironmentVariable("SAUCE_USERNAME")+":"+Environment.GetEnvironmentVariable("SAUCE_ACCESS_KEY")+"@ondemand.saucelabs.com:80/wd/hub"),capabillities);
                     //driver = new ChromeDriver(ChromeDriverServerDirectory);
                    break;
