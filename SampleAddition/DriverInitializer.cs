@@ -25,7 +25,7 @@ using OpenQA.Selenium.Support.UI;
         {
 
 
-            Func<IWebDriver> getRawWebDriverFunc = () => GetRawWebDriver(Environment.GetEnvironmentVariable("SELENIUM_BROWSER"));
+            Func<IWebDriver> getRawWebDriverFunc = () => GetRawWebDriver(Environment.GetEnvironmentVariable("${SELENIUM_BROWSER}"));
             string startingUrl = null;
             startingUrl = StartingUrlSingleTenant;
             IWebDriver webDriver = getRawWebDriverFunc();
