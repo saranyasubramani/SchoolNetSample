@@ -2,9 +2,10 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>C:\Program Files %28x86%29\NUnit 2.6.4\bin\nunit.exe</StartProgram>
+    <StartProgram>
+    </StartProgram>
     <StartArguments>SampleAddition.dll /run</StartArguments>
-    <StartWorkingDirectory>C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\</StartWorkingDirectory>
+    <StartWorkingDirectory>C:\Users\saranya.subramani\git\SchoolNetSample\SampleAddition\bin\Debug\</StartWorkingDirectory>
     <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
     <RemoteDebugEnabled>false</RemoteDebugEnabled>
   </PropertyGroup>

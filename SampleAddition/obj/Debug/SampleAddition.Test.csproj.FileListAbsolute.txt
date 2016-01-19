@@ -36,3 +36,11 @@ C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\bin\Debug\nunit.fra
 C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\obj\Debug\SampleAddition.dll
 C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\obj\Debug\SampleAddition.pdb
 C:\Users\saranya.subramani\git\SampleAddition\SampleAddition\obj\Debug\SampleAddition.Test.csprojResolveAssemblyReference.cache
+C:\Users\saranya.subramani\git\SchoolNetSample\SampleAddition\bin\Debug\SampleAddition.dll.config
+C:\Users\saranya.subramani\git\SchoolNetSample\SampleAddition\bin\Debug\SampleAddition.dll
+C:\Users\saranya.subramani\git\SchoolNetSample\SampleAddition\bin\Debug\SampleAddition.pdb
+C:\Users\saranya.subramani\git\SchoolNetSample\SampleAddition\bin\Debug\nunit.framework.dll
+C:\Users\saranya.subramani\git\SchoolNetSample\SampleAddition\bin\Debug\nunit.framework.xml
+C:\Users\saranya.subramani\git\SchoolNetSample\SampleAddition\obj\Debug\SampleAddition.Test.csprojResolveAssemblyReference.cache
+C:\Users\saranya.subramani\git\SchoolNetSample\SampleAddition\obj\Debug\SampleAddition.dll
+C:\Users\saranya.subramani\git\SchoolNetSample\SampleAddition\obj\Debug\SampleAddition.pdb
