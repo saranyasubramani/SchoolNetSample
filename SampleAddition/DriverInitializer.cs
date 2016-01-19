@@ -24,7 +24,7 @@ using OpenQA.Selenium.Support.UI;
         public static IWebDriver InvokeWebDriver()
         {
 
-
+            Console.WriteLine("Browser:" + Environment.GetEnvironmentVariable("${SELENIUM_BROWSER}"));
             Func<IWebDriver> getRawWebDriverFunc = () => GetRawWebDriver(Environment.GetEnvironmentVariable("${SELENIUM_BROWSER}"));
             string startingUrl = null;
             startingUrl = StartingUrlSingleTenant;
@@ -91,7 +91,10 @@ using OpenQA.Selenium.Support.UI;
                     Debug.WriteLine("ChromeDriver: " + ChromeDriverServerDirectory);
                     
                     DesiredCapabilities capabillities = new DesiredCapabilities();
-
+                    Console.WriteLine("Versiob:" + Environment.GetEnvironmentVariable("${SELENIUM_VERSION}"));
+                    Console.WriteLine("Platform:" + Environment.GetEnvironmentVariable("${SELENIUM_PLATFORM}"));
+                    Console.WriteLine("User:" + Environment.GetEnvironmentVariable("${SAUCE_USERNAME}"));
+                    Console.WriteLine("Key:" + Environment.GetEnvironmentVariable("${SAUCE_ACCESS_KEY}"));
                     capabillities.SetCapability(CapabilityType.BrowserName,Environment.GetEnvironmentVariable("${SELENIUM_BROWSER}"));
                     capabillities.SetCapability(CapabilityType.BrowserName,Environment.GetEnvironmentVariable("${SELENIUM_VERSION}"));
                     capabillities.SetCapability(CapabilityType.Platform, Environment.GetEnvironmentVariable("${SELENIUM_PLATFORM}"));
