@@ -92,9 +92,9 @@ using OpenQA.Selenium.Support.UI;
                     
                     DesiredCapabilities capabillities = new DesiredCapabilities();
 
-                    capabillities.SetCapability(CapabilityType.BrowserName,Environment.GetEnvironmentVariable("SELENIUM_BROWSER"));
-                    capabillities.SetCapability(CapabilityType.BrowserName,Environment.GetEnvironmentVariable("SELENIUM_VERSION"));
-                    capabillities.SetCapability(CapabilityType.Platform, Environment.GetEnvironmentVariable("SELENIUM_PLATFORM"));
+                    capabillities.SetCapability(CapabilityType.BrowserName,Environment.GetEnvironmentVariable("${SELENIUM_BROWSER}"));
+                    capabillities.SetCapability(CapabilityType.BrowserName,Environment.GetEnvironmentVariable("${SELENIUM_VERSION}"));
+                    capabillities.SetCapability(CapabilityType.Platform, Environment.GetEnvironmentVariable("${SELENIUM_PLATFORM}"));
                     
 
 
@@ -104,8 +104,8 @@ using OpenQA.Selenium.Support.UI;
                     capabillities.SetCapability("deviceName", "");
                     capabillities.SetCapability("deviceOrientation", "");*/
 
-                    capabillities.SetCapability("username", Environment.GetEnvironmentVariable("SAUCE_USERNAME"));
-                    capabillities.SetCapability("accessKey", Environment.GetEnvironmentVariable("SAUCE_ACCESS_KEY"));
+                    capabillities.SetCapability("username", Environment.GetEnvironmentVariable("${SAUCE_USERNAME}"));
+                    capabillities.SetCapability("accessKey", Environment.GetEnvironmentVariable("${SAUCE_ACCESS_KEY}"));
                     driver = new RemoteWebDriver(new Uri("http://ondemand.saucelabs.com:80/wd/hub"), capabillities, TimeSpan.FromSeconds(600));
                     //driver = new RemoteWebDriver(new Uri("http://"+Environment.GetEnvironmentVariable("SAUCE_USERNAME")+":"+Environment.GetEnvironmentVariable("SAUCE_ACCESS_KEY")+"@ondemand.saucelabs.com:80/wd/hub"),capabillities);
                     //driver = new ChromeDriver(ChromeDriverServerDirectory);
